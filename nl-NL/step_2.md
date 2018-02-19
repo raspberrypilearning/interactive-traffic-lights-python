@@ -1,20 +1,20 @@
-## Wat je nodig zult hebben
+## Wat heb je nodig
 
 ### Hardware
 
 - Raspberry Pi
-- 3x LED's en weerstanden
-- Knop
+- 3 LED's en weerstanden
+- Schakelaar
 - Zoemer
-- broodplank
+- Experimenteer bord
 - Verbindingsdraden
 
-Sluit uw componenten aan op de volgende GPIO-pinnen:
+Sluit je componenten op de volgende GPIO-pinnen aan:
 
-| bestanddeel | GPIO-pen |
-| ----------- |:--------:|
-| Knop        |    25    |
-| Rode LED    |    24    |
-| Oranje LED  |    23    |
-| Groene LED  |    22    |
-| Zoemer      |    5     |
+| Onderdeel  | GPIO-pin |
+| ---------- |:--------:|
+| Schakelaar |    25    |
+| Rode LED   |    24    |
+| Oranje LED |    23    |
+| Groene LED |    22    |
+| Zoemer     |    5     |
