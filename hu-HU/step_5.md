@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## A közlekedési lámpa sorrendje
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+Az összes lámpa együttes vezérlésével egyenként vezérelheti az egyes LED-eket is. A közlekedési lámpák LED-jei, a gombok és a hangjelző segítségével létrehozhat saját forgalmi jelzőlámpákat, valamint a gyalogos átkelést!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. Módosítsa hurokját a LED-ek automatizált sorrendjének végrehajtására:
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+míg a True: lights.green.on () alvás (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. Add hozzá `wait_for_press ()` így a gomb lenyomása kezdeményezi a sorrendet:
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+míg az Igaz: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-Try some more sequences of your own.
+Próbálj ki néhány saját szekvenciát.
 
-3. Now try creating the full traffic lights sequence:
+3. Most próbáld ki a teljes közlekedési lámpa szekvenciát:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - Zölden
+    - Borostyán
+    - Piros
+    - Piros és sárga
+    - Zölden
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    Győződjön meg róla, hogy a helyes fényeket be- és kikapcsolja a megfelelő időben, és győződjön meg róla, hogy a `alvás` hogy a szekvencia tökéletesen megfeleljen.
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. Próbálja meg hozzáadni a gyalogos átkeléshez használt gombot. A gombnak a pirosra kell állítania (nem azonnal), és adja meg a gyalogosoknak az időtartamát, mielőtt áthelyezi a fényeket zöldre, amíg a gombot újra megnyomja.
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. Most próbáljon meg egy hangjelzést a csipogásra gyorsan jelezni, hogy biztonságos a kereszteződés, a látássérült gyalogosok javára.
