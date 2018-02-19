@@ -1,13 +1,13 @@
 ---
-title: Bestuur een interactieve opeenvolging van verkeerslichten met Python
-hero_image: images / banner.png
+title: Bestuur een interactief verkeerslicht met Python
+hero_image: afbeeldingen / banner.png
 description: Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslichten met Python te programmeren
 theme: rood
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
+curriculum: programmeren-0, computeren-0
 interests: "fysiek computergebruik"
 technologies: "elektronica, fysieke computergebruik, python"
 site_areas: ""
