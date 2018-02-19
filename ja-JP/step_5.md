@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## 交通信号のシーケンス
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+ライトのセット全体を制御するだけでなく、各LEDを個別に制御することもできます。 信号機のLED、ボタン、およびブザーを使用すると、歩行者の横断歩行に合わせて独自の信号を作成できます。
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. 自動化された一連のLEDが点灯するようにループを変更します。
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+while：light.green.on（）sleep（1）lights.amber.on（）sleep（1）lights.red.on（）sleep（1）lights.off（）
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. a `wait_for_press（）`を追加します。ボタンを押すとシーケンスが開始されます。
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+while：button.wait_for_press（）lights.green.on（）sleep（1）lights.amber.on（）sleep（1）lights.red.on（）sleep（1）lights.off（）
 ```
 
-Try some more sequences of your own.
+あなた自身のシーケンスをいくつか試してみてください。
 
-3. Now try creating the full traffic lights sequence:
+3. 次に、完全な信号灯のシーケンスを作成してみましょう。
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - グリーンオン
+    - アンバーオン
+    - レッドオン
+    - 赤と琥珀色
+    - グリーンオン
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    適切なライトを適切なタイミングでオン/オフして、必ず`sleep`を使用してください。シーケンスを完全に時間を計る。
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. 歩行者横断のためのボタンを追加してみてください。 ボタンはライトを赤色に（すぐにではなく）移動させ、歩行者に交差する時間を与えてから、ライトを緑色に戻して、ボタンを再度押すまで点灯させる必要があります。
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. 視覚障害のある歩行者のために、ブザーを素早く鳴らして交差するのが安全であることを示すブザーを追加してみましょう。
