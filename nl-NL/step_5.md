@@ -15,24 +15,32 @@ while True:
     lights.off()
 ```
 
-2. Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks initieert:
+2. Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks in gang zet:
     
     ```python
-while True: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    button.wait_for_press()
+    lights.groen.on()
+    sleep(1)
+    lights.oranje.on()
+    sleep(1)
+    lights.rood.on()
+    sleep(1)
+    lights.off()
 ```
 
-Probeer nog wat meer eigen reeksen.
+Probeer je eigen reeks te maken.
 
-3. Probeer nu de volledige reeks verkeerslichten te maken:
+3. Probeer nu de volledige verkeerslichten reeks te maken:
     
-    - Groen aan
-    - Amber aan
-    - Rood aan
-    - Rood en oranje op
-    - Groen aan
+    - Groen aan, rood uit
+    - Oranje aan, groen uit
+    - Rood aan, oranje uit
+    - 
+    - 
     
-    Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat u `slaap` om de volgorde perfect te timen.
+    Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat je steeds de juiste `sleep` periode gebruikt om de volgorde perfect te timen.
 
-4. Probeer de knop toe te voegen voor een zebrapad. De knop moet de lichten naar rood (niet onmiddellijk) verplaatsen en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
+4. Probeer de knop voor een zebrapad toe te voegen. De knop moet de lichten (niet onmiddellijk) op rood zetten en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
 
-5. Probeer nu een zoemer toe te voegen om snel te piepen om aan te geven dat het veilig is om over te steken, ten behoeve van visueel gehandicapte voetgangers.
+5. Laat nu ten behoeve van visueel gehandicapte voetgangers een zoemer snel piepen om aan te geven dat het veilig is om over te steken.
