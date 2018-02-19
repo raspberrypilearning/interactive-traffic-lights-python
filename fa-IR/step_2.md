@@ -1,20 +1,20 @@
-## What you will need
+## آنچه شما نیاز دارید
 
-### Hardware
+### سخت افزار
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- تمشک پی
+- LED ها و مقاومت های 3x
+- دکمه
+- زنگ هشدار
+- ورق کاغذ
+- سیم های پیچی
 
-Wire up your components to the following GPIO pins:
+کامپوننت های خود را به پین ​​GPIO زیر متصل کنید:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| مولفه        | پین GPIO |
+| ------------ |:--------:|
+| دکمه         |    25    |
+| چراغ قرمز    |    24    |
+| چراغ قهوه ای |    23    |
+| چراغ سبز     |    22    |
+| زنگ هشدار    |    5     |
