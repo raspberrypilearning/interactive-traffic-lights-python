@@ -1,3 +1,3 @@
-## Introduction
+## Invoering
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslichten met Python te programmeren
