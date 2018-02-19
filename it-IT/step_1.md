@@ -1,3 +1,3 @@
-## Introduction
+## introduzione
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Usa LED, un pulsante e un cicalino per programmare una sequenza completa di semafori con Python
