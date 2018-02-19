@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## Volgorde verkeerslichten
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+Behalve dat u alle lampen samen bestuurt, kunt u elke led afzonderlijk bedienen. Met verkeerslicht-LED's, een knop en een zoemer kunt u uw eigen verkeerslichtreeks creëren, compleet met voetgangersoversteekplaats!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. Pas uw lus aan om een ​​geautomatiseerde reeks LED's te laten branden:
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+while True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks initieert:
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+while True: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-Try some more sequences of your own.
+Probeer nog wat meer eigen reeksen.
 
-3. Now try creating the full traffic lights sequence:
+3. Probeer nu de volledige reeks verkeerslichten te maken:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - Groen aan
+    - Amber aan
+    - Rood aan
+    - Rood en oranje op
+    - Groen aan
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat u `slaap` om de volgorde perfect te timen.
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. Probeer de knop toe te voegen voor een zebrapad. De knop moet de lichten naar rood (niet onmiddellijk) verplaatsen en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. Probeer nu een zoemer toe te voegen om snel te piepen om aan te geven dat het veilig is om over te steken, ten behoeve van visueel gehandicapte voetgangers.
