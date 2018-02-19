@@ -1,11 +1,18 @@
-## Volgorde verkeerslichten
+## Verkeerslichten volgorde
 
-Behalve dat u alle lampen samen bestuurt, kunt u elke led afzonderlijk bedienen. Met verkeerslicht-LED's, een knop en een zoemer kunt u uw eigen verkeerslichtreeks creëren, compleet met voetgangersoversteekplaats!
+Behalve dat je alle LED's tegelijkertijd bestuurt, kunt je ook elke led afzonderlijk bedienen. Met traffic light LEDs, een knop en een zoemer kunt je jouw eigen verkeerslichtreeks creëren, compleet met voetgangersoversteekplaats!
 
-1. Pas uw lus aan om een ​​geautomatiseerde reeks LED's te laten branden:
+1. Pas je lus aan om een de reeks LED's ​​geautomatiseerde te laten branden:
     
     ```python
-while True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    lights.groen.on()
+    sleep(1)
+    lights.oranje.on()
+    sleep(1)
+    lights.rood.on()
+    sleep(1)
+    lights.off()
 ```
 
 2. Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks initieert:
