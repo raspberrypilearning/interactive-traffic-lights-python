@@ -1,48 +1,25 @@
-## GPIO components
+## اجزای GPIO
 
-1. Open Python 3 from the main menu, and open a new file.
+1. پایتون 3 را از منوی اصلی باز کنید و فایل جدیدی باز کنید.
 
-2. Enter the following code:
+2. کد زیر را وارد کنید:
     
     ```python
-from gpiozero import LED, Button
-
-led = LED(22)
-button = Button(25)
-
-while True:
-    if button.is_pressed:
-        led.on()
-    else:
-        led.off()
+از gpiozero import LED، Button led = LED (22) دکمه = دکمه (25) در حالی که True: if button.is_pressed: led.on () else: led.off ()
 ```
 
-3. Run your code with `F5`. Now when you press the button, the green LED will come on.
+3. کد خود را با `F5`. حالا وقتی دکمه را فشار می دهید، چراغ سبز روشن می شود.
 
-4. Try creating three LEDs:
+4. سعی کنید سه LED را ایجاد کنید:
     
     ```python
-from gpiozero import LED, Button
-
-red = LED(24)
-amber = LED(23)
-green = LED(22)
-
-button = Button(25)
+از gpiozero import LED، دکمه red = LED (24) amber = LED (23) green = LED (22) دکمه = دکمه (25)
 ```
 
-5. Get them to come on when the button is pressed:
+5. وقتی دکمه فشرده می شود، آنها را بکشید:
     
     ```python
-while True:
-    if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
-    else:
-        green.off()
-        amber.off()
-        red.off()
+در حالی که True: اگر button.is_pressed: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
 ```
 
-6. Run the code and press the button.
+6. کد را اجرا کنید و دکمه را فشار دهید.
