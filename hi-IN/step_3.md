@@ -1,48 +1,25 @@
-## GPIO components
+## जीपीआईओ घटकों
 
-1. Open Python 3 from the main menu, and open a new file.
+1. मुख्य मेनू से अजगर 3 को खोलें, और एक नई फ़ाइल खोलें।
 
-2. Enter the following code:
+2. निम्न कोड दर्ज करें:
     
     ```python
-from gpiozero import LED, Button
-
-led = LED(22)
-button = Button(25)
-
-while True:
-    if button.is_pressed:
-        led.on()
-    else:
-        led.off()
+gpiozero आयात एलईडी से, बटन का नेतृत्व = एलईडी (22) बटन = बटन (25) जबकि सच: अगर बटन। दबाया गया: led.on () अन्य: led.off ()
 ```
 
-3. Run your code with `F5`. Now when you press the button, the green LED will come on.
+3. अपना कोड चलाएं `F5` अब जब आप बटन दबाते हैं, तो हरी एलईडी पर आ जाएगा।
 
-4. Try creating three LEDs:
+4. तीन एल ई डी बनाने का प्रयास करें:
     
     ```python
-from gpiozero import LED, Button
-
-red = LED(24)
-amber = LED(23)
-green = LED(22)
-
-button = Button(25)
+gpiozero आयात एलईडी से, बटन लाल = एलईडी (24) एम्बर = एलईडी (23) हरा = एलईडी (22) बटन = बटन (25)
 ```
 
-5. Get them to come on when the button is pressed:
+5. बटन दबाए जाने पर उन्हें आना चाहिए:
     
     ```python
-while True:
-    if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
-    else:
-        green.off()
-        amber.off()
-        red.off()
+जबकि सच: यदि बटन .is_pressed: green.on () amber.on () red.on () अन्य: green.off () amber.off () red.off ()
 ```
 
-6. Run the code and press the button.
+6. कोड को चलाने और बटन दबाएं।
