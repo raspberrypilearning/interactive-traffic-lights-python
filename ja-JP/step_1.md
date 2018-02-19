@@ -1,3 +1,3 @@
-## Introduction
+## 前書き
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+LED、ボタン、ブザーを使用して、Pythonで全交通信号のシーケンスをプログラムする
