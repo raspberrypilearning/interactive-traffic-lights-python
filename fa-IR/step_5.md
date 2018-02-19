@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## ترتیب چراغ راهنمایی
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+همچنین با کنترل کامل مجموعه ای از چراغ ها، می توانید هر LED را به صورت جداگانه کنترل کنید. با LED های چراغ راهنمایی، یک دکمه و زنگ، شما می توانید دنباله چراغ خود را ایجاد کنید، با عبور از عابر پیاده!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. اصلاح حلقه خود را برای انجام دنباله خودکار چراغ های روشن:
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+در حالی که True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. اضافه کردن `wait_for_press ()` به طوری که فشار دادن دکمه دنباله را آغاز می کند:
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+در حالی که True: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
 ```
 
-Try some more sequences of your own.
+سعی کنید برخی از توالی های بیشتری از خود را.
 
-3. Now try creating the full traffic lights sequence:
+3. در حال حاضر سعی کنید تظاهرات کامل ترافیک ایجاد کنید:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - سبز در
+    - آجری در
+    - قرمز در
+    - قرمز و مروارید در
+    - سبز در
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    مطمئن شوید که چراغ های صحیح روشن و خاموش را در زمان مناسب روشن کنید و مطمئن شوید که از 123 | 6 | 0 | 321 | خواب</code> به موقع دنباله ای کاملا.
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. سعی کنید دکمه را برای گذر عابر پیاده اضافه کنید. این دکمه باید چراغ را به رنگ قرمز (نه بلافاصله) حرکت دهد و قبل از حرکت دادن چراغ به سبز تا زمانی که دکمه دوباره فشار داده شود، گذر زمان را متوقف می کند.
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. در حال حاضر سعی کنید یک زنگ هشدار برای بوق زدن به سرعت نشان می دهد که آن را امن برای متقابل، به نفع عابرین پیاده از دید در معرض.
