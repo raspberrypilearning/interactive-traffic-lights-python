@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## Последователност на светофарите
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+Освен контрола на целия комплект светлини заедно, можете също да контролирате всеки светодиод индивидуално. С светодиодите със светофар, бутон и зумер можете да създадете собствена последователност на светофара, допълнена с пешеходна пътека!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. Променете своя цикъл, за да извършите автоматична последователност от светещи светодиоди:
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+(1) светлини () заспиване (1) светлини () заспиване (1)
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. Добавете `wait_for_press ()` така че натискането на бутона инициира последователността:
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+() заспиване (1) светлини () заспиване (1) светкавица () заспиване (1)
 ```
 
-Try some more sequences of your own.
+Опитайте още няколко последователности от вашите собствени.
 
-3. Now try creating the full traffic lights sequence:
+3. Сега опитайте да създадете пълната последователност на светофарите:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - Зелено на
+    - Амбър на
+    - Червено включено
+    - Червено и кехлибарено
+    - Зелено на
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    Уверете се, че включите и изключите правилните светлини в точното време и се уверете, че използвате `sleep` за да се насладите перфектно последователността.
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. Опитайте да добавите бутона за преминаване на пешеходци. Бутонът трябва да премества светлинните индикатори в червено (не веднага) и да даде на пешеходците време да преминат, преди да преместят осветлението обратно в зелено, докато бутонът бъде натиснат отново.
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. Сега опитайте да добавите бързо звънец, за да покажете, че е безопасно да преминете, в полза на пешеходците с увредено зрение.
