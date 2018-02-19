@@ -1,20 +1,20 @@
-## What you will need
+## तुम क्या आवश्यकता होगी
 
-### Hardware
+### हार्डवेयर
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- रास्पबेरी पाई
+- 3x एल ई डी और प्रतिरोधों
+- बटन
+- बजर
+- breadboard
+- जम्पर तार
 
-Wire up your components to the following GPIO pins:
+अपने घटकों को निम्न जीपीआईआई पिन में वायर कर दें:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| अंग         | जीपीआईओ पिन |
+| ----------- |:-----------:|
+| बटन         |     25      |
+| लाल एलईडी   |     24      |
+| एम्बर एलईडी |     23      |
+| ग्रीन एलईडी |     22      |
+| बजर         |      5      |
