@@ -1,20 +1,20 @@
-## What you will need
+## あなたが必要とするもの
 
-### Hardware
+### ハードウェア
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- ラズベリーパイ
+- 3x LEDおよび抵抗
+- ボタン
+- ブザー
+- ブレッドボード
+- ジャンパ線
 
-Wire up your components to the following GPIO pins:
+コンポーネントを次のGPIOピンに配線します。
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| 成分      | GPIOピン |
+| ------- |:------:|
+| ボタン     |   25   |
+| 赤色LED   |   24   |
+| 琥珀LED   |   23   |
+| グリーンLED |   22   |
+| ブザー     |   5    |
