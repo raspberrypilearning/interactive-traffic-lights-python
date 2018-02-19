@@ -1,3 +1,3 @@
-## Introduction
+## परिचय
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+पायथन के साथ एक पूर्ण ट्रैफिक लाइट अनुक्रम को प्रोग्राम करने के लिए एल ई डी, एक बटन और एक बजर का उपयोग करें
