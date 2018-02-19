@@ -1,20 +1,20 @@
-## What you will need
+## Amire szükséged lesz
 
-### Hardware
+### Hardver
 
 - Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- 3x LED-ek és ellenállások
+- Gomb
+- Berregő
+- breadboard
+- Jumper vezetékek
 
-Wire up your components to the following GPIO pins:
+Húzza fel az összetevőket a következő GPIO-csapokhoz:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| Összetevő          | GPIO tű |
+| ------------------ |:-------:|
+| Gomb               |   25    |
+| Piros LED          |   24    |
+| Borostyánsárga LED |   23    |
+| Zöld LED           |   22    |
+| Berregő            |    5    |
