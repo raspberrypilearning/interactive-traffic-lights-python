@@ -1,29 +1,15 @@
-## Traffic lights
+## چراغ راهنمایی
 
-You can use the built-in `TrafficLights` interface instead of three LEDs.
+شما می توانید از ساخته شده است در `TrafficLights` رابط کاربری به جای سه LED.
 
-1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+1. اصلاح `از gpiozero import ...` خط برای جایگزینی `LED` با `TrafficLights`:
     
     ```python
-from gpiozero import TrafficLights, Button
-from time import sleep
-
-button = Button(25)
-lights = TrafficLights(24, 23, 22)
-
-while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
+از gpiozero import TrafficLights، Button از دکمه زمان ورود واردات = دکمه (25) lights = TrafficLights (24، 23، 22) در حالی که True: button.wait_for_press () lights.on () button.wait_for_release () lights.off ()
 ```
 
-2. Try changing the lights to `blink`:
+2. سعی کنید نور را عوض کنید `blink`:
     
     ```python
-while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+در حالی که True: lights.blink () button.wait_for_press () lights.off () button.wait_for_release ()
 ```
