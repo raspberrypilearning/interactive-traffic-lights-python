@@ -1,24 +1,24 @@
 ---
-title: Control an Interactive Traffic Lights Sequence with Python
-hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
-theme: red
+title: Controlla una sequenza di semafori interattivi con Python
+hero_image: images / banner.png
+description: Usa LED, un pulsante e un cicalino per programmare una sequenza completa di semafori con Python
+theme: rosso
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
-interests: "physical computing"
-technologies: "electronics, physical computing, python"
+curriculum: programmazione-0, compatta-0
+interests: "calcolo fisico"
+technologies: "elettronica, calcolo fisico, pitone"
 site_areas: ""
 steps:
   - 
-    title: Introduction
+    title: introduzione
   - 
-    title: What you will need
+    title: Di cosa avrai bisogno
   - 
-    title: GPIO components
+    title: Componenti GPIO
   - 
-    title: Traffic lights
+    title: Semafori
   - 
-    title: Traffic lights sequence
+    title: Sequenza dei semafori
