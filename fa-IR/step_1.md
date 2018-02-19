@@ -1,3 +1,3 @@
-## Introduction
+## معرفی
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+استفاده از LED ها، یک دکمه و زنگ برای برنامه ریزی یک چراغ ترافیک کامل با پایتون
