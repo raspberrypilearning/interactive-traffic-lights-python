@@ -1,3 +1,3 @@
-## Introduction
+## introduction
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Utilisez des voyants, un bouton et un buzzer pour programmer une séquence de feux de circulation complète avec Python
