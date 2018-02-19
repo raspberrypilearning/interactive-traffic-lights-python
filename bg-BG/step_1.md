@@ -1,3 +1,3 @@
-## Introduction
+## Въведение
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Използвайте светодиоди, бутон и зумер за програмиране на пълна последователност на светофарите с Python
