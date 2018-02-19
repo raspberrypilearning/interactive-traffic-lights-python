@@ -1,20 +1,20 @@
-## What you will need
+## Какво ще ви трябва
 
-### Hardware
+### железария
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
+- Малина Пи
+- 3x светодиоди и резистори
+- бутон
+- зумер
 - Breadboard
-- Jumper wires
+- Свързващи проводници
 
-Wire up your components to the following GPIO pins:
+Свържете компонентите си към следните GPIO пина:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| Компонент        | ПИН на GPIO |
+| ---------------- |:-----------:|
+| бутон            |     25      |
+| Червен светодиод |     24      |
+| Амбър LED        |     23      |
+| Зелен светодиод  |     22      |
+| зумер            |      5      |
