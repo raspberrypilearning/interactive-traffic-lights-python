@@ -1,24 +1,24 @@
 ---
-title: Control an Interactive Traffic Lights Sequence with Python
-hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
-theme: red
+title: Az interaktív közlekedési lámpák szekvenciájának vezérlése a Python segítségével
+hero_image: images / banner.png
+description: Használjon LED-eket, egy gombot és egy zümmögőt, hogy programozhasson egy teljes forgalomjelző sorozatot Python-val
+theme: piros
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
-interests: "physical computing"
-technologies: "electronics, physical computing, python"
+curriculum: programozás-0, fizikai-comp-0
+interests: "fizikai számítástechnika"
+technologies: "elektronika, fizikai számítástechnika, python"
 site_areas: ""
 steps:
   - 
-    title: Introduction
+    title: Bevezetés
   - 
-    title: What you will need
+    title: Amire szükséged lesz
   - 
-    title: GPIO components
+    title: GPIO komponensek
   - 
-    title: Traffic lights
+    title: Közlekedési lámpák
   - 
-    title: Traffic lights sequence
+    title: A közlekedési lámpa sorrendje
