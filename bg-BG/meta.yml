@@ -1,24 +1,24 @@
 ---
-title: Control an Interactive Traffic Lights Sequence with Python
-hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
-theme: red
+title: Контролирайте интерактивна последователност на светлините за трафика с Python
+hero_image: изображения / banner.png
+description: Използвайте светодиоди, бутон и зумер за програмиране на пълна последователност на светофарите с Python
+theme: червен
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
-interests: "physical computing"
-technologies: "electronics, physical computing, python"
+curriculum: програмиране-0, phys-comp-0
+interests: "физически изчисления"
+technologies: "електроника, физически изчисления, питон"
 site_areas: ""
 steps:
   - 
-    title: Introduction
+    title: Въведение
   - 
-    title: What you will need
+    title: Какво ще ви трябва
   - 
-    title: GPIO components
+    title: Компоненти на GPIO
   - 
-    title: Traffic lights
+    title: Светофар
   - 
-    title: Traffic lights sequence
+    title: Последователност на светофарите
