@@ -7,18 +7,18 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programmeren-0, computeren-0
-interests: "fysiek computergebruik"
-technologies: "elektronica, fysieke computergebruik, python"
+curriculum: programmeren-0, computer gebruik-0
+interests: "computergebruik"
+technologies: "elektronica, computergebruik, python"
 site_areas: ""
 steps:
   - 
-    title: Invoering
+    title: Introductie
   - 
-    title: Wat je nodig zult hebben
+    title: Wat heb je nodig
   - 
     title: GPIO-componenten
   - 
     title: Verkeerslichten
   - 
-    title: Volgorde verkeerslichten
+    title: Verkeerslicht volgorde
