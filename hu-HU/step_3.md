@@ -1,48 +1,25 @@
-## GPIO components
+## GPIO komponensek
 
-1. Open Python 3 from the main menu, and open a new file.
+1. Nyissa meg a Python 3-at a főmenüből, és nyisson meg egy új fájlt.
 
-2. Enter the following code:
+2. Adja meg a következő kódot:
     
     ```python
-from gpiozero import LED, Button
-
-led = LED(22)
-button = Button(25)
-
-while True:
-    if button.is_pressed:
-        led.on()
-    else:
-        led.off()
+a gpiozero import LED, a gomb led = LED (22) gomb = gomb (25), míg a True: ha a gomb megnyomva: led.on () else: led.off ()
 ```
 
-3. Run your code with `F5`. Now when you press the button, the green LED will come on.
+3. Futtassa a kódot a `F5`paranccsal. Most, amikor megnyomja a gombot, megjelenik a zöld LED.
 
-4. Try creating three LEDs:
+4. Próbáljon három LED-et létrehozni:
     
     ```python
-from gpiozero import LED, Button
-
-red = LED(24)
-amber = LED(23)
-green = LED(22)
-
-button = Button(25)
+gpiozero import LED, gomb piros = LED (24) sárga = LED (23) zöld = LED (22) gomb = gomb (25)
 ```
 
-5. Get them to come on when the button is pressed:
+5. Vigye be őket a gomb megnyomásakor.
     
     ```python
-while True:
-    if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
-    else:
-        green.off()
-        amber.off()
-        red.off()
+míg a True: ha gomb megnyomva: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
 ```
 
-6. Run the code and press the button.
+6. Futtassa a kódot, és nyomja meg a gombot.
