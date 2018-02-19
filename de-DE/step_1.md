@@ -1,3 +1,3 @@
-## Introduction
+## Einführung
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Verwenden Sie LEDs, eine Taste und einen Summer, um eine vollständige Ampelkette mit Python zu programmieren
