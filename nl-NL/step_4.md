@@ -1,29 +1,15 @@
-## Traffic lights
+## Verkeerslichten
 
-You can use the built-in `TrafficLights` interface instead of three LEDs.
+U kunt de ingebouwde `TrafficLights` gebruiken interface in plaats van drie LED's.
 
-1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+1. Wijzig de `from gpiozero import ...` te vervangen regel `LED` met `TrafficLights`:
     
     ```python
-from gpiozero import TrafficLights, Button
-from time import sleep
-
-button = Button(25)
-lights = TrafficLights(24, 23, 22)
-
-while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
+van gpiozero importeren TrafficLights, Button from time import sleepknop = Button (25) lights = TrafficLights (24, 23, 22) while True: button.wait_for_press () lights.on () button.wait_for_release () lights.off ()
 ```
 
-2. Try changing the lights to `blink`:
+2. Probeer de verlichting te veranderen naar `knip`:
     
     ```python
-while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+while True: lights.blink () button.wait_for_press () lights.off () button.wait_for_release ()
 ```
