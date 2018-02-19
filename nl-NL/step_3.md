@@ -22,13 +22,27 @@ while True:
 4. Probeer drie LED's aan te sluiten:
     
     ```python
-van gpiozero importeren LED, Knop rood = LED (24) oranje = LED (23) groen = LED (22) knop = Knop (25)
+from gpiozero import LED, Button
+
+rood = LED(24)
+oranje = LED(23)
+groen = LED(22)
+
+button = Button(25)
 ```
 
-5. Laat ze komen als de knop wordt ingedrukt:
+5. Laat ze oplichten als de knop wordt ingedrukt:
     
     ```python
-while True: if button.is_pressed: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
+while True:
+    if button.is_pressed:
+        groen.on()
+        oranje.on()
+        rood.on()
+    else:
+        groen.off()
+        oranje.off()
+        rood.off()
 ```
 
 6. Voer de code uit en druk op de knop.
