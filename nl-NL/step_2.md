@@ -1,20 +1,20 @@
-## What you will need
+## Wat je nodig zult hebben
 
 ### Hardware
 
 - Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- 3x LED's en weerstanden
+- Knop
+- Zoemer
+- broodplank
+- Verbindingsdraden
 
-Wire up your components to the following GPIO pins:
+Sluit uw componenten aan op de volgende GPIO-pinnen:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| bestanddeel | GPIO-pen |
+| ----------- |:--------:|
+| Knop        |    25    |
+| Rode LED    |    24    |
+| Oranje LED  |    23    |
+| Groene LED  |    22    |
+| Zoemer      |    5     |
