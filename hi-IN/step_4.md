@@ -1,29 +1,15 @@
-## Traffic lights
+## यातायात बत्तिया
 
-You can use the built-in `TrafficLights` interface instead of three LEDs.
+आप का उपयोग कर सकते हैं अंतर्निहित `ट्रैफिक लाइफ` तीन एलआईडी के बजाय अंतरफलक
 
-1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+1. जीपीओजेरो आयात से 123_6_0_321 | संशोधित करें ... 123_7_1_321 | बदलने के लिए लाइन `LED` साथ `ट्रैफिक लाइफ्स`:
     
     ```python
-from gpiozero import TrafficLights, Button
-from time import sleep
-
-button = Button(25)
-lights = TrafficLights(24, 23, 22)
-
-while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
+gpiozero आयात से ट्रैफिक लाइट्स, टाइम आयात स्लीप बटन से बटन = बटन (25) रोशनी = ट्रैफ़िक लाइइट्स (24, 23, 22) जबकि सही: बटन.वाइट_फोर_प्रेस () रोशनी.ऑन () बटन.वाइट_फोर_रेली () रोशनी.ऑफ ()
 ```
 
-2. Try changing the lights to `blink`:
+2. रोशनी बदलने की कोशिश करें `ब्लिंक`:
     
     ```python
-while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+जबकि सच्चा: रोशनी। ब्लिंक () बटन। वाइट_फोर_प्रेस () रोशनी.ऑफ () बटन.वाइट_फोर_रेली ()
 ```
