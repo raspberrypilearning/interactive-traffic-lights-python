@@ -1,24 +1,24 @@
 ---
-title: Control an Interactive Traffic Lights Sequence with Python
-hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
-theme: red
+title: Steuern Sie eine interaktive Ampel Sequenz mit Python
+hero_image: Bilder / Banner.png
+description: Verwenden Sie LEDs, eine Taste und einen Summer, um eine vollständige Ampelkette mit Python zu programmieren
+theme: rot
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
-interests: "physical computing"
-technologies: "electronics, physical computing, python"
+curriculum: Programmierung-0, Phys-Comp-0
+interests: "physikalische Datenverarbeitung"
+technologies: "Elektronik, physikalisches Rechnen, Python"
 site_areas: ""
 steps:
   - 
-    title: Introduction
+    title: Einführung
   - 
-    title: What you will need
+    title: Was wirst du brauchen
   - 
-    title: GPIO components
+    title: GPIO-Komponenten
   - 
-    title: Traffic lights
+    title: Ampeln
   - 
-    title: Traffic lights sequence
+    title: Ampel Sequenz
