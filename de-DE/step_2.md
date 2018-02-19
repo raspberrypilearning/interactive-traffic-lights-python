@@ -1,20 +1,20 @@
-## What you will need
+## Was wirst du brauchen
 
 ### Hardware
 
 - Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- 3x LEDs und Widerstände
+- Taste
+- Summer
+- Steckbrett
+- Überbrückungsdrähte
 
-Wire up your components to the following GPIO pins:
+Verdrahten Sie Ihre Komponenten mit den folgenden GPIO-Pins:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| Komponente | GPIO-Stift |
+| ---------- |:----------:|
+| Taste      |     25     |
+| Rote LED   |     24     |
+| Amber LED  |     23     |
+| Grüne LED  |     22     |
+| Summer     |     5      |
