@@ -1,3 +1,3 @@
-## Introduction
+## Bevezetés
 
-Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
+Használjon LED-eket, egy gombot és egy zümmögőt, hogy programozhasson egy teljes forgalomjelző sorozatot Python-val
