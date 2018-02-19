@@ -1,46 +1,31 @@
-## Traffic lights sequence
+## ट्रैफिक लाइट अनुक्रम
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+साथ ही रोशनी के पूरे सेट को एक साथ नियंत्रित करने के साथ-साथ, आप प्रत्येक एलईडी को व्यक्तिगत रूप से नियंत्रित कर सकते हैं ट्रैफिक लाइट, एक बटन, और बजर के साथ, आप ट्रैफिक लाइट अनुक्रम बना सकते हैं, पैदल यात्री क्रॉसिंग के साथ पूरा करें!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. एलआईडी के एक स्वचालित क्रम को प्रकाशित करने के लिए अपने पाश को संशोधित करें:
     
     ```python
-while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+जबकि सच: lights.green.on () नींद (1) रोशनी.एम्बर.ऑन () नींद (1) रोशनी.रेड.ऑन () नींद (1) रोशनी.ऑफ ()
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. एक | 123_6_0_321 जोड़ें | wait_for_press ()</code> ताकि बटन दबाकर अनुक्रम आरंभ किया जा सके:
     
     ```python
-while True:
-    button.wait_for_press()
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+जबकि सच: बटन.वाइट_फोर_प्रेस () रोशनी.green.on () नींद (1) रोशनी.एम्बर.ऑन () नींद (1) रोशनी.रेड.ऑन () नींद (1) रोशनी.ऑफ ()
 ```
 
-Try some more sequences of your own.
+अपने खुद के कुछ और दृश्यों की कोशिश करें
 
-3. Now try creating the full traffic lights sequence:
+3. अब पूर्ण ट्रैफिक लाइट अनुक्रम बनाने का प्रयास करें:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - ग्रीन पर
+    - अंबर पर
+    - रेड ऑन
+    - लाल और एम्बर पर
+    - ग्रीन पर
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    सही समय पर सही रोशनी चालू और बंद करें, और सुनिश्चित करें कि आप उपयोग करते हैं 123_6_0_321 | sleep</code> समय के लिए पूरी तरह से अनुक्रम
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. पैदल यात्री क्रॉसिंग के लिए बटन को जोड़ने का प्रयास करें बटन को रोशनी को लाल (तुरंत नहीं) में ले जाना चाहिए और रोशनी को वापस हरे रंग में ले जाने से पहले पदलियों को समय देना होगा जब तक कि बटन को फिर से दबाया नहीं जाए।
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. अब नेत्रहीनों वाले पैदल चलने वालों के लाभ के लिए, यह बताने के लिए कि एक बजर जल्दी से पार करने के लिए सुरक्षित है, बीपल को जोड़ने का प्रयास करें
