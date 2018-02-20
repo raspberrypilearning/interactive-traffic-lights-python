@@ -1,8 +1,8 @@
-## Ampel Sequenz
+## Verkehrsampel-Sequenz
 
-Sie können nicht nur die gesamte Beleuchtungsgruppe steuern, sondern auch jede LED einzeln steuern. Mit Ampel-LEDs, einem Knopf und einem Summer können Sie Ihre eigene Ampel-Sequenz mit Fußgängerüberweg erstellen!
+Du kannst nicht nur die gesamte Lampengruppe steuern, sondern auch jede LED einzeln. Mit Ampel-LEDs, einem Taster und einem Summer kannst du deine eigene Ampel-Sequenz mit Fußgängerübergang erstellen!
 
-1. Ändern Sie Ihre Schleife, um eine automatisierte Sequenz von LEDs zu erzeugen, die leuchten:
+1. Ändere deine Schleife, um folgenden automatisierten Ablauf der LEDs zu erzeugen:
     
     ```python
 while True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
