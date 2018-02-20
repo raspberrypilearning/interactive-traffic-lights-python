@@ -13,7 +13,7 @@ Verdrahte deine Komponenten mit den folgenden GPIO-Pins:
 
 | Komponente | GPIO-Stift |
 | ---------- |:----------:|
-| Taste      |     25     |
+| Taster     |     25     |
 | Rote LED   |     24     |
 | Gelbe LED  |     23     |
 | Grüne LED  |     22     |
