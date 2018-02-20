@@ -18,7 +18,7 @@ while True:
     lampen.off()
 ```
 
-2. Versuche die Lichter auf: `blink` zu ändern:
+2. Versuche den Befehl für die Lampen auf `blink` zu ändern:
     
     ```python
 while True:
