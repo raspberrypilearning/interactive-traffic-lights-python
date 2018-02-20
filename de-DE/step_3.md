@@ -5,21 +5,44 @@
 2. Gib den folgenden Code ein:
     
     ```python
-von gpiozero importieren LED, Taste LED = LED (22) Taste = Taste (25) während True: wenn button.is_pressed: led.on () sonst: led.off ()
+from gpiozero import LED, Button
+
+led = LED(22)
+taster = Button(25)
+
+while True:
+    if taster.is_pressed:
+        led.on()
+    else:
+        led.off()
 ```
 
-3. Führen Sie Ihren Code mit `F5`. Wenn Sie jetzt die Taste drücken, leuchtet die grüne LED auf.
+3. Führe deinen Code mit `F5` aus. Wenn du jetzt die Taste drückst, leuchtet die grüne LED auf.
 
-4. Versuchen Sie, drei LEDs zu erstellen:
+4. Versuche drei LEDs zu erstellen:
     
     ```python
-von gpiozero import LED, Taste rot = LED (24) gelb = LED (23) grün = LED (22) Taste = Taste (25)
+from gpiozero import LED, Button
+
+rot = LED(24)
+gelb = LED(23)
+gruen = LED(22)
+
+taster = Button(25)
 ```
 
-5. Lassen Sie sie beim Drücken der Taste einschalten:
+5. Lasse sie beim Drücken der Taste einschalten:
     
     ```python
-while True: if button.is_pressed: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
+while True:
+    if taster.is_pressed:
+        gruen.on()
+        gelb.on()
+        rot.on()
+    else:
+        gruen.off()
+        gelb.off()
+        rot.off()
 ```
 
-6. Führen Sie den Code aus und drücken Sie die Taste.
+6. Führe den Code aus und drücke die Taste.
