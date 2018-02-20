@@ -1,3 +1,3 @@
-## introduzione
+## Introduzione
 
-Usa LED, un pulsante e un cicalino per programmare una sequenza completa di semafori con Python
+Usa i LED, un pulsante e un cicalino per programmare una sequenza completa delle luci di un semaforo con Python
