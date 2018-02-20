@@ -1,20 +1,35 @@
-## Sequenza dei semafori
+## La sequenza del semaforo
 
-Oltre a controllare l'insieme delle luci insieme, puoi anche controllare ciascun LED individualmente. Con i semafori a LED, un pulsante e un cicalino, puoi creare la tua sequenza di semafori, completa di passaggio pedonale!
+Oltre a poter controllare le luci tutte allo stesso tempo, puoi anche controllare ciascun LED individualmente. Con i LED del semaforo, un pulsante e un cicalino, puoi creare la tua sequenza, completa di un passaggio pedonale!
 
-1. Modifica il tuo loop per eseguire una sequenza automatica di LED accesi:
+1. Modifica il ciclo in modo da accendere automaticamente i LED:
     
     ```python
-while True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-2. Aggiungi un `wait_for_press ()` in modo che premendo il pulsante si avvii la sequenza:
+2. Aggiungi un `wait_for_press()` in modo tale che la sequenza venga avviata alla pressione del pulsante:
     
     ```python
-while True: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    button.wait_for_press()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-Prova altre sequenze di tua scelta.
+Prova altre sequenze a tuo piacimento.
 
 3. Ora prova a creare la sequenza completa dei semafori:
     
