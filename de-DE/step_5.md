@@ -17,24 +17,32 @@ while True:
 Red, amber und green sind Parameter des TrafficLight-APIs und stehen für die Farben rot, gelb und grün.
 ```
 
-2. Fügen Sie ein `wait_for_press ()` hinzu so dass das Drücken der Taste die Sequenz initiiert:
+2. Füge ein `wait_for_press ()` hinzu so dass das Drücken der Taste die Sequenz startet:
     
     ```python
-while True: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    taster.wait_for_press()
+    lampen.green.on()
+    sleep(1)
+    lampen.amber.on()
+    sleep(1)
+    lampen.red.on()
+    sleep(1)
+    lampen.off()
 ```
 
-Probieren Sie einige weitere Sequenzen aus.
+Probiere einige weitere Sequenzen aus.
 
-3. Versuchen Sie nun, die vollständige Ampelsequenz zu erstellen:
+3. Versuche nun, die vollständige Ampelsequenz zu erstellen:
     
     - Grün an
-    - Bernstein an
+    - Gelb an
     - Rot an
-    - Rot und Bernstein an
+    - Rot und Gelb an
     - Grün an
     
-    Stellen Sie sicher, dass Sie die richtigen Lichter zur richtigen Zeit ein- und ausschalten, und stellen Sie sicher, dass Sie `sleep` verwenden um die Sequenz perfekt zu synchronisieren.
+    Stelle sicher, dass die richtigen Lichter zur richtigen Zeit ein- und ausschalten, und stelle sicher, dass du `sleep` verwendest um den richtigen Zeitablauf zu haben.
 
-4. Fügen Sie den Knopf für einen Fußgängerüberweg hinzu. Die Taste sollte die Lichter auf rot (nicht sofort) bewegen und den Fußgängern Zeit zum Überqueren geben, bevor die Lichter wieder grün werden, bis die Taste erneut gedrückt wird.
+4. Füge den Knopf für einen Fußgängerübergang hinzu. Die Taste sollte die Ampel auf rot (nicht sofort) stellen und den Fußgängern Zeit zum Überqueren geben, bevor die Ampel wieder grün wird. Die Ampel bleibt grün bis die Taste erneut gedrückt wird.
 
-5. Versuchen Sie jetzt, einen Summer hinzuzufügen, um schnell zu piepen, um anzuzeigen, dass es gefahrlos überquert werden kann, um sehbehinderten Fußgängern zu helfen.
+5. Versuche jetzt, einen Summer hinzuzufügen, der schnell piept, um sehbehinderten Fußgängern anzuzeigen, dass sie gefahrlos überqueren können.
