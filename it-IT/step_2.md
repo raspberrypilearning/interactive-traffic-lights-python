@@ -1,15 +1,15 @@
-## Di cosa avrai bisogno
+## Cosa ti serve
 
 ### Hardware
 
 - Raspberry Pi
-- 3x LED e resistori
+- 3x LED e resistenze
 - Pulsante
 - Cicalino
-- breadboard
-- Fili di ponticello
+- Breadboard
+- Ponticelli
 
-Collega i tuoi componenti ai seguenti pin GPIO:
+Collega i componenti ai seguenti pin GPIO:
 
 | Componente | Pin GPIO |
 | ---------- |:--------:|
