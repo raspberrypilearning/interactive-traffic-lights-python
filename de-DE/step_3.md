@@ -31,7 +31,7 @@ gruen = LED(22)
 taster = Button(25)
 ```
 
-5. Lasse sie beim Drücken der Taste einschalten:
+5. Lasse alle drei beim Drücken der Taste einschalten:
     
     ```python
 while True:
