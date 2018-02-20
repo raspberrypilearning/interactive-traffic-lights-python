@@ -1,15 +1,29 @@
-## Ampeln
+## Verkehrsampel
 
-Sie können das eingebaute `TrafficLights` verwenden Schnittstelle statt drei LEDs.
+Du kannst die eingebaute `TrafficLights`-Schnittstelle statt drei LEDs verwenden.
 
-1. Ändern Sie die `von gpiozero import ...` zu ersetzende Zeile `LED` mit `TrafficLights`:
+1. Ändere die `from gpiozero import...`-Anweisung und ersetze `LED` mit `TrafficLights`:
     
     ```python
-von gpiozero Importiere TrafficLights, Button aus der Zeit import sleep button = Button (25) lights = TrafficLights (24, 23, 22) während True: button.wait_for_press () lights.on () button.wait_for_release () lights.off ()
+from gpiozero import TrafficLights, Button
+from time import sleep
+
+taster = Button(25)
+lampen = TrafficLights(24, 23, 22)
+
+while True:
+    taster.wait_for_press()
+    lampen.on()
+    taster.wait_for_release()
+    lampen.off()
 ```
 
-2. Versuchen Sie, die Lichter zu ändern: `blink`:
+2. Versuche die Lichter auf: `blink` zu ändern:
     
     ```python
-wahr: lights.blink () button.wait_for_press () lights.off () button.wait_for_release ()
+while True:
+    lampen.blink()
+    taster.wait_for_press()
+    lampen.off()
+    taster.wait_for_release()
 ```
