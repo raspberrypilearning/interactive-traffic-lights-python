@@ -1,4 +1,4 @@
-## Was wirst du brauchen
+## Was du brauchen wirst
 
 ### Hardware
 
@@ -7,14 +7,14 @@
 - Taste
 - Summer
 - Steckbrett
-- Überbrückungsdrähte
+- Verbindungsdrähte
 
-Verdrahten Sie Ihre Komponenten mit den folgenden GPIO-Pins:
+Verdrahte deine Komponenten mit den folgenden GPIO-Pins:
 
 | Komponente | GPIO-Stift |
 | ---------- |:----------:|
 | Taste      |     25     |
 | Rote LED   |     24     |
-| Amber LED  |     23     |
+| Gelbe LED  |     23     |
 | Grüne LED  |     22     |
 | Summer     |     5      |
