@@ -5,7 +5,16 @@ Du kannst nicht nur die gesamte Lampengruppe steuern, sondern auch jede LED einz
 1. Ändere deine Schleife, um folgenden automatisierten Ablauf der LEDs zu erzeugen:
     
     ```python
-while True: lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+while True:
+    lampen.green.on()
+    sleep(1)
+    lampen.amber.on()
+    sleep(1)
+    lampen.red.on()
+    sleep(1)
+    lampen.off()
+
+Red, amber und green sind Parameter des TrafficLight-APIs und stehen für die Farben rot, gelb und grün.
 ```
 
 2. Fügen Sie ein `wait_for_press ()` hinzu so dass das Drücken der Taste die Sequenz initiiert:
