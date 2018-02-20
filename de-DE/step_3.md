@@ -2,7 +2,7 @@
 
 1. Öffne Python 3 aus dem Hauptmenü und öffne eine neue Datei.
 
-2. Geben Sie den folgenden Code ein:
+2. Gib den folgenden Code ein:
     
     ```python
 von gpiozero importieren LED, Taste LED = LED (22) Taste = Taste (25) während True: wenn button.is_pressed: led.on () sonst: led.off ()
