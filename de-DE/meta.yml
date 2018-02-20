@@ -1,7 +1,7 @@
 ---
-title: Steuere eine interaktive Verkehrsampel-Sequenz mit Python
+title: Steuere einen interaktiven Verkehrsampel-Ablauf mit Python
 hero_image: images/banner.png
-description: Verwende LEDs, eine Taste und einen Summer, um eine vollständige Ampel-Sequenz mit Python zu programmieren
+description: Verwende LEDs, einen Taster und einen Summer, um einen vollständigen Ampel-Ablauf mit Python zu programmieren
 theme: red
 duration: 2
 listed: false
@@ -21,4 +21,4 @@ steps:
   - 
     title: Verkehrs-Ampel
   - 
-    title: Verkehrsampel-Sequenz
+    title: Verkehrsampel-Ablauf
