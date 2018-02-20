@@ -4,7 +4,7 @@
 
 - Raspberry Pi
 - 3x LEDs und Widerstände
-- Taste
+- Taster
 - Summer
 - Steckbrett
 - Verbindungsdrähte
