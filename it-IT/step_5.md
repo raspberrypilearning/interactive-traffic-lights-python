@@ -41,6 +41,6 @@ Prova altre sequenze a tuo piacimento.
     
     Assicurati di accendere e spegnere le luci corrette al momento giusto, e assicurati di usare `sleep` per sincronizzare perfettamente la sequenza.
 
-4. Prova ad aggiungere il pulsante per un passaggio pedonale. Il pulsante dovrebbe spostare le luci in rosso (non immediatamente) e dare ai pedoni il tempo di attraversare prima di riportare le luci in verde finché il pulsante non viene premuto di nuovo.
+4. Prova ad aggiungere il pulsante per simulare un passaggio pedonale. Il pulsante dovrebbe spostare far diventare rosso il semaforo (non immediatamente) e dare ai pedoni il tempo di attraversare prima di far diventare di nuovo verde e finché il pulsante non viene premuto nuovamente.
 
-5. Ora prova ad aggiungere un cicalino per emettere rapidamente un segnale acustico per indicare che è sicuro attraversarlo, a beneficio dei pedoni ipovedenti.
+5. Ora prova ad aggiungere un cicalino per emettere un segnale acustico per segnalare che è sicuro attraversare la strada, a beneficio dei pedoni ipovedenti.
