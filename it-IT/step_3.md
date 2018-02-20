@@ -8,10 +8,10 @@
 from gpiozero import LED, Button
 
 led = LED(22)
-pulsante = Button(25)
+button = Button(25)
 
 while True:
-    if pulsante.is_pressed:
+    if button.is_pressed:
         led.on()
     else:
         led.off()
@@ -24,25 +24,25 @@ while True:
     ```python
 from gpiozero import LED, Button
 
-rosso = LED(24)
-ambra = LED(23)
-verde = LED(22)
+red = LED(24)
+amber = LED(23)
+green = LED(22)
 
-pulsante = Button(25)
+button = Button(25)
 ```
 
 5. Fai in modo che si accendano quando viene premuto il pulsante:
     
     ```python
 while True:
-    if pulsante.is_pressed:
-        verde.on()
-        ambra.on()
-        rosso.on()
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
     else:
-        verde.off()
-        ambra.off()
-        rosso.off()
+        green.off()
+        amber.off()
+        red.off()
 ```
 
 6. Esegui il programma e premi il pulsante.
