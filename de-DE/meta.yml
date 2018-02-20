@@ -1,24 +1,24 @@
 ---
-title: Steuern Sie eine interaktive Ampel Sequenz mit Python
-hero_image: Bilder / Banner.png
-description: Verwenden Sie LEDs, eine Taste und einen Summer, um eine vollständige Ampelkette mit Python zu programmieren
-theme: rot
+title: Steuere eine interaktive Verkehrsampel-Sequenz mit Python
+hero_image: images/banner.png
+description: Verwende LEDs, eine Taste und einen Summer, um eine vollständige Ampel-Sequenz mit Python zu programmieren
+theme: red
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: Programmierung-0, Phys-Comp-0
-interests: "physikalische Datenverarbeitung"
-technologies: "Elektronik, physikalisches Rechnen, Python"
+curriculum: programming-0, phys-comp-0
+interests: "physical computing"
+technologies: "electronics, physical computing, python"
 site_areas: ""
 steps:
   - 
-    title: Einführung
+    title: Einleitung
   - 
-    title: Was wirst du brauchen
+    title: Was du brauchen wirst
   - 
     title: GPIO-Komponenten
   - 
-    title: Ampeln
+    title: Verkehrs-Ampel
   - 
-    title: Ampel Sequenz
+    title: Verkehrsampel-Sequenz
