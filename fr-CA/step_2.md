@@ -12,9 +12,9 @@
 Wire up your components to the following GPIO pins:
 
 | Component | GPIO pin |
-| --------- | :------: |
-| Button    | 25       |
-| Red LED   | 24       |
-| Amber LED | 23       |
-| Green LED | 22       |
-| Buzzer    | 5        |
+| --------- |:--------:|
+| Button    |    25    |
+| Red LED   |    24    |
+| Amber LED |    23    |
+| Green LED |    22    |
+| Buzzer    |    5     |
