@@ -7,18 +7,22 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programmazione-0, compatta-0
-interests: "calcolo fisico"
-technologies: "elettronica, calcolo fisico, pitone"
-site_areas: ""
-steps:
-  - 
-    title: introduzione
-  - 
-    title: Di cosa avrai bisogno
-  - 
-    title: Componenti GPIO
-  - 
-    title: Semafori
-  - 
-    title: Sequenza dei semafori
+curriculum: 2, design-0, programming-1, phys-comp-2, manufacture-0, community-0
+interests: ''
+technologies: electronic-components, python
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps: 
+-
+title: introduzione
+-
+title: Di cosa avrai bisogno
+-
+title: Componenti GPIO
+-
+title: Semafori
+-
+title: Sequenza dei semafori
