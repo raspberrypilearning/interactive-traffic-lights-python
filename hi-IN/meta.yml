@@ -7,18 +7,22 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: प्रोग्रामिंग -0, फिज़-कंप-0
-interests: "शारीरिक कंप्यूटिंग"
-technologies: "इलेक्ट्रॉनिक्स, भौतिक कंप्यूटिंग, अजगर"
-site_areas: ""
-steps:
-  - 
-    title: परिचय
-  - 
-    title: तुम क्या आवश्यकता होगी
-  - 
-    title: जीपीआईओ घटकों
-  - 
-    title: यातायात बत्तिया
-  - 
-    title: ट्रैफिक लाइट अनुक्रम
+curriculum: 2, design-0, programming-1, phys-comp-2, manufacture-0, community-0
+interests: ''
+technologies: electronic-components, python
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps: 
+-
+title: परिचय
+-
+title: तुम क्या आवश्यकता होगी
+-
+title: जीपीआईओ घटकों
+-
+title: यातायात बत्तिया
+-
+title: ट्रैफिक लाइट अनुक्रम
