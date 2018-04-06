@@ -7,18 +7,22 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: プログラミング-0、phys-comp-0
-interests: "物理計算"
-technologies: "エレクトロニクス、物理計算機、Python"
-site_areas: ""
-steps:
-  - 
-    title: 前書き
-  - 
-    title: あなたが必要とするもの
-  - 
-    title: GPIOコンポーネント
-  - 
-    title: 交通信号灯
-  - 
-    title: 交通信号のシーケンス
+curriculum: 2, design-0, programming-1, phys-comp-2, manufacture-0, community-0
+interests: ''
+technologies: electronic-components, python
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps: 
+-
+title: 前書き
+-
+title: あなたが必要とするもの
+-
+title: GPIOコンポーネント
+-
+title: 交通信号灯
+-
+title: 交通信号のシーケンス
