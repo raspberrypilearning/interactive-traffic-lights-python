@@ -7,18 +7,22 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: programming-0، phys-comp-0
-interests: "محاسبات فیزیکی"
-technologies: "الکترونیک، محاسبات فیزیکی، پایتون"
-site_areas: ""
-steps:
-  - 
-    title: معرفی
-  - 
-    title: آنچه شما نیاز دارید
-  - 
-    title: اجزای GPIO
-  - 
-    title: چراغ راهنمایی
-  - 
-    title: ترتیب چراغ راهنمایی
+curriculum: 2, design-0, programming-1, phys-comp-2, manufacture-0, community-0
+interests: ''
+technologies: electronic-components, python
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
+steps: 
+-
+title: معرفی
+-
+title: آنچه شما نیاز دارید
+-
+title: اجزای GPIO
+-
+title: چراغ راهنمایی
+-
+title: ترتیب چراغ راهنمایی
