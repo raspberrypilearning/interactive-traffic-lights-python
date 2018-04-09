@@ -4,16 +4,16 @@
 
 - Raspberry Pi
 - 3 LED's en weerstanden
-- Schakelaar
+- Drukknop
 - Zoemer
 - Experimenteer bord
 - Verbindingsdraden
 
-Sluit je componenten op de volgende GPIO-pinnen aan:
+Sluit uw componenten aan op de volgende GPIO-pinnen:
 
-| Onderdeel  | GPIO-pin |
+| Component  | GPIO-pin |
 | ---------- |:--------:|
-| Schakelaar |    25    |
+| Drukknop   |    25    |
 | Rode LED   |    24    |
 | Oranje LED |    23    |
 | Groene LED |    22    |
