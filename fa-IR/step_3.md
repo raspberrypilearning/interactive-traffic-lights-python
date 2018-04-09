@@ -5,21 +5,44 @@
 2. کد زیر را وارد کنید:
     
     ```python
-از gpiozero import LED، Button led = LED (22) دکمه = دکمه (25) در حالی که True: if button.is_pressed: led.on () else: led.off ()
+from gpiozero import LED, Button
+
+led = LED(22)
+button = Button(25)
+
+while True:
+    if button.is_pressed:
+        led.on()
+    else:
+        led.off()
 ```
 
-3. کد خود را با `F5`. حالا وقتی دکمه را فشار می دهید، چراغ سبز روشن می شود.
+3. کد خود را با `F5` اجرا کنید. حالا وقتی دکمه را فشار می دهید، چراغ سبز روشن می شود.
 
-4. سعی کنید سه LED را ایجاد کنید:
+4. ایجاد سه Led را امتحان کنید:
     
     ```python
-از gpiozero import LED، دکمه red = LED (24) amber = LED (23) green = LED (22) دکمه = دکمه (25)
+from gpiozero import LED, Button
+
+red = LED(24)
+amber = LED(23)
+green = LED(22)
+
+button = Button(25)
 ```
 
-5. وقتی دکمه فشرده می شود، آنها را بکشید:
+5. کاری کنید که وقتی دکمه فشرده می‌شود، آن‌ها روشن شوند:
     
     ```python
-در حالی که True: اگر button.is_pressed: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
+while True:
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
+    else:
+        green.off()
+        amber.off()
+        red.off()
 ```
 
 6. کد را اجرا کنید و دکمه را فشار دهید.
