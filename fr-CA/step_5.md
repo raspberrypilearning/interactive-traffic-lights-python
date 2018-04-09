@@ -1,46 +1,46 @@
-## Traffic lights sequence
+## Séquence de feux de circulation
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+En plus de contrôler les feux tous ensemble, vous pouvez aussi contrôler les DELs individuellement. Avec des DELs, un bouton et un avertisseur sonore, vous pouvez créer votre propre séquence de feux de circulation complète, avec une traverse de piétons!
 
-1. Modify your loop to perform an automated sequence of LEDs being lit:
+1. Modifiez votre boucle pour exécuter une séquence automatisée d'allumage de DELs:
     
     ```python
 while True:
-    lights.green.on()
+    feux.green.on()
     sleep(1)
-    lights.amber.on()
+    feux.amber.on()
     sleep(1)
-    lights.red.on()
+    feux.red.on()
     sleep(1)
-    lights.off()
+    feux.off()
 ```
 
-2. Add a `wait_for_press()` so that pressing the button initiates the sequence:
+2. Ajouter un `wait_for_press()` de sorte que le fait d'appuyer sur le bouton initie la séquence:
     
     ```python
 while True:
-    button.wait_for_press()
-    lights.green.on()
+    bouton.wait_for_press()
+    feux.green.on()
     sleep(1)
-    lights.amber.on()
+    feux.amber.on()
     sleep(1)
-    lights.red.on()
+    feux.red.on()
     sleep(1)
-    lights.off()
+    feux.off()
 ```
 
-Try some more sequences of your own.
+Essayez d'autres séquences de votre choix.
 
-3. Now try creating the full traffic lights sequence:
+3. Maintenant, essayez de créer la séquence complète des feux de circulation:
     
-    - Green on
-    - Amber on
-    - Red on
-    - Red and amber on
-    - Green on
+    - Vert on
+    - Jaune on
+    - Rouge on
+    - Vert on
+    - ...
     
-    Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+    Assurez-vous d'allumer et d'éteindre les bons feux au bon moment et assurez-vous d'utiliser `sleep` pour contrôler la durée de chaque étape la séquence.
 
-4. Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+4. Essayez d'ajouter le bouton pour un passage pour piétons. Le bouton devrait faire passer les feux au rouge (pas immédiatement), et donner aux piétons le temps de traverser avant de remettre les feux au vert, jusqu'à ce que le bouton soit pressé à nouveau.
 
-5. Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians.
+5. Maintenant essayez d'ajouter un bip sonore rapide pour indiquer aux personnes malvoyantes qu'il est sécuritaire de traverser.

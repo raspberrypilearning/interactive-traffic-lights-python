@@ -1,29 +1,29 @@
-## Traffic lights
+## Feux de circulation
 
-You can use the built-in `TrafficLights` interface instead of three LEDs.
+Vous pouvez utiliser l'interface `TrafficLights` intégrée à la librairie gpiozero au lieu de trois DELs.
 
-1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+1. Modifiez la ligne `from gpiozero import ...` pour remplacer `LED` par `TrafficLights`:
     
     ```python
 from gpiozero import TrafficLights, Button
 from time import sleep
 
-button = Button(25)
-lights = TrafficLights(24, 23, 22)
+bouton = Button(25)
+feux = TrafficLights(24, 23, 22)
 
 while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
+    bouton.wait_for_press()
+    feux.on()
+    bouton.wait_for_release()
+    feux.on()
 ```
 
-2. Try changing the lights to `blink`:
+2. Essayez de changer les feux à `blink`:
     
     ```python
 while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+    feux.blink()
+    bouton.wait_for_press()
+    feux.off()
+    bouton.wait_for_press()
 ```

@@ -8,9 +8,13 @@ listed: false
 ingredient: false
 copyedit: false
 curriculum: programming-0, phys-comp-0
-interests: "physical computing"
-technologies: "electronics, physical computing, python"
-site_areas: ""
+interests: ''
+technologies: electronics, physical computing, python
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
     title: Einleitung

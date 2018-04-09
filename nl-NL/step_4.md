@@ -1,8 +1,8 @@
 ## Verkeerslichten
 
-Je kunt de ingebouwde `Verkeerslichten` interface gebruiken in plaats van drie LED's.
+Je kunt de ingebouwde `TrafficLights` interface gebruiken in plaats van drie LED's.
 
-1. Vervang de `from gpiozero import...` regel de `LED` met `TrafficLights`:
+1. Vervang in de `from gpiozero import...` regel de `LED` met `TrafficLights`:
     
     ```python
 from gpiozero import TrafficLights, Button
@@ -18,7 +18,7 @@ while True:
     lights.off()
 ```
 
-2. Probeer de verlichting te veranderen naar `blink` (knipperen):
+2. Probeer de lichten te veranderen naar `blink` (knipperen):
     
     ```python
 while True:
