@@ -1,15 +1,29 @@
-## 交通信号灯
+## 信号機
 
-組み込み`TrafficLights`を使用できます。 3つのLEDの代わりに使用できます。
+3つのLEDの代わりに、組み込みまれた`TrafficLights`を使用できます。
 
-1. `gpiozeroインポートからの修正|`交換する線`LED` `TrafficLights`：
+1. `from gpiozero import..`の行の`LED` を`TrafficLights`に変更します：
     
     ```python
-トラフィックライト、時刻からのボタンの読み込みボタン=ボタン（25）lights = TrafficLights（24,23,22）while：button.wait_for_press（）lights.on（）button.wait_for_release（）lights.off（）
+from gpiozero import TrafficLights, Button
+from time import sleep
+
+button = Button(25)
+lights = TrafficLights(24, 23, 22)
+
+while True:
+  button.wait_for_press()
+  lights.on()
+  button.wait_for_release()
+  lights.off()
 ```
 
 2. ライトを`blink`に変更してみてください：
     
     ```python
-true：lights.blink（）button.wait_for_press（）lights.off（）button.wait_for_release（）
+while True:
+  lights.blink()
+  button.wait_for_press()
+  lights.off()
+  button.wait_for_release()
 ```
