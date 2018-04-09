@@ -1,19 +1,23 @@
 ---
-title: یک ترتیب چراغ های ترافیکی تعاملی با پایتون را کنترل کنید
-hero_image: images / banner.png
-description: استفاده از LED ها، یک دکمه و زنگ برای برنامه ریزی یک چراغ ترافیک کامل با پایتون
-theme: سرخ
+title: کنترل ترتیب چراغ راهنمایی با پایتون
+hero_image: images/banner.png
+description: از LEDها، یک دکمه و یک زنگ برای برنامه‌ریزی یک چراغ راهنمایی با پایتون، استفاده کنید
+theme: red
 duration: 2
 listed: false
 ingredient: false
 copyedit: false
 curriculum: programming-0، phys-comp-0
-interests: "محاسبات فیزیکی"
-technologies: "الکترونیک، محاسبات فیزیکی، پایتون"
-site_areas: ""
+interests: ''
+technologies: الکترونیک، محاسبات فیزیکی، پایتون
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
-    title: معرفی
+    title: مقدمه
   - 
     title: آنچه شما نیاز دارید
   - 
