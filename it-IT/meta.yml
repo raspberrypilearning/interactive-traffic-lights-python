@@ -8,9 +8,13 @@ listed: false
 ingredient: false
 copyedit: false
 curriculum: programmazione-0, compatta-0
-interests: "calcolo fisico"
-technologies: "elettronica, calcolo fisico, pitone"
-site_areas: ""
+interests: ''
+technologies: elettronica, calcolo fisico, pitone
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
     title: introduzione
