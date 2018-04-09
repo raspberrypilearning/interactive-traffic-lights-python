@@ -1,8 +1,8 @@
-## Verkeerslichten volgorde
+## Volgorde verkeerslichten
 
-Behalve dat je alle LED's tegelijkertijd bestuurt, kunt je ook elke led afzonderlijk bedienen. Met traffic light LEDs, een knop en een zoemer kunt je jouw eigen verkeerslichtreeks creëren, compleet met voetgangersoversteekplaats!
+Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk bedienen. Met LEDs, een drukknop en een zoemer kan je jouw eigen verkeerslicht maken, compleet met oversteekplaats voor voetgangers !
 
-1. Pas je lus aan om een de reeks LED's ​​geautomatiseerde te laten branden:
+1. Pas je lus aan om de LED's ​​automatisch in volgorde te laten branden:
     
     ```python
 while True:
@@ -31,7 +31,7 @@ while True:
 
 Probeer je eigen reeks te maken.
 
-3. Probeer nu de volledige verkeerslichten reeks te maken:
+3. Probeer nu de volledige reeks voor een verkeerslicht te maken:
     
     - Groen aan, rood uit
     - Oranje aan, groen uit
