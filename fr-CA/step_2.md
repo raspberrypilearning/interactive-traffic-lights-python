@@ -1,20 +1,20 @@
-## What you will need
+## Ce dont vous aurez besoin
 
-### Hardware
+### Matériel
 
 - Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- 3x DELs et résistances
+- Bouton
+- Avertisseur sonore
+- Planche de prototypage
+- Fils de raccordement
 
-Wire up your components to the following GPIO pins:
+Connectez vos composants aux broches GPIO suivantes:
 
-| Component | GPIO pin |
-| --------- |:--------:|
-| Button    |    25    |
-| Red LED   |    24    |
-| Amber LED |    23    |
-| Green LED |    22    |
-| Buzzer    |    5     |
+| Composant          | Broche GPIO |
+| ------------------ |:-----------:|
+| Bouton             |     25      |
+| DEL rouge          |     24      |
+| DEL jaune          |     23      |
+| DEL verte          |     22      |
+| Avertisseur sonore |      5      |
