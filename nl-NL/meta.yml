@@ -1,8 +1,8 @@
 ---
 title: Bestuur een interactief verkeerslicht met Python
-hero_image: afbeeldingen / banner.png
+hero_image: images/banner.png
 description: Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslichten met Python te programmeren
-theme: rood
+theme: red
 duration: 2
 listed: false
 ingredient: false
@@ -16,13 +16,8 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps: 
--
-title: Introductie
--
-title: Wat heb je nodig
--
-title: GPIO-componenten
--
-title: Verkeerslichten
--
-title: Verkeerslicht volgorde
+- title: Introductie
+- title: Wat heb je nodig
+- title: GPIO-componenten
+- title: Verkeerslichten
+- title: Verkeerslicht volgorde

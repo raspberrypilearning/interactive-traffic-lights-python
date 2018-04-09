@@ -16,13 +16,8 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps: 
--
-title: Einleitung
--
-title: Was du brauchen wirst
--
-title: GPIO-Komponenten
--
-title: Verkehrs-Ampel
--
-title: Verkehrsampel-Ablauf
+- title: Einleitung
+- title: Was du brauchen wirst
+- title: GPIO-Komponenten
+- title: Verkehrs-Ampel
+- title: Verkehrsampel-Ablauf
