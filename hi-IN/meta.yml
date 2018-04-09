@@ -8,9 +8,13 @@ listed: false
 ingredient: false
 copyedit: false
 curriculum: प्रोग्रामिंग -0, फिज़-कंप-0
-interests: "शारीरिक कंप्यूटिंग"
-technologies: "इलेक्ट्रॉनिक्स, भौतिक कंप्यूटिंग, अजगर"
-site_areas: ""
+interests: ''
+technologies: इलेक्ट्रॉनिक्स, भौतिक कंप्यूटिंग, अजगर
+site_areas: projects
+hardware: electronic-components
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
     title: परिचय
