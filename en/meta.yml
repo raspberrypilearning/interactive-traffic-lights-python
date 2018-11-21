@@ -1,22 +1,12 @@
 title: Control an Interactive Traffic Lights Sequence with Python
 hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program a full traffic lights sequence with Python
-theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
-duration: 2
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
 listed: false
-ingredient: false
 copyedit: false
-curriculum: 2, design-0, programming-1, phys-comp-2, manufacture-0, community-0
-interests: ''
-technologies: electronic-components, python
-site_areas: projects
-hardware: electronic-components
-software: python
-version: 3
-last_tested: 2017-01-01
+version: 4.1
+last_tested: 2018-11-21
 steps:
-  - title: Introduction
-  - title: What you will need
-  - title: GPIO components
-  - title: Traffic lights
-  - title: Traffic lights sequence
+- title: Introduction
+- title: Connect the LEDs
+- title: Control the LEDs
+- title: Traffic lights sequence

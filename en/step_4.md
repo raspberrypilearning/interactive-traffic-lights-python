@@ -1,29 +1,37 @@
 ## Traffic lights
 
-You can use the built-in `TrafficLights` interface instead of three LEDs.
+You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
-1. Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+--- task ---
 
-    ```python
-    from gpiozero import TrafficLights, Button
-    from time import sleep
+Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
 
-    button = Button(25)
-    lights = TrafficLights(24, 23, 22)
+```python
+from gpiozero import TrafficLights, Button
+from time import sleep
 
-    while True:
-        button.wait_for_press()
-        lights.on()
-        button.wait_for_release()
-        lights.off()
-    ```
+button = Button(21)
+lights = TrafficLights(25, 28, 27)
 
-1. Try changing the lights to `blink`:
+while True:
+    button.wait_for_press()
+    lights.on()
+    button.wait_for_release()
+    lights.off()
+```
 
-    ```python
-    while True:
-        lights.blink()
-        button.wait_for_press()
-        lights.off()
-        button.wait_for_release()
-    ```
+--- /task ---
+
+--- task ---
+
+Try changing the lights to `blink`:
+
+```python
+while True:
+    lights.blink()
+    button.wait_for_press()
+    lights.off()
+    button.wait_for_release()
+```
+
+--- /task ---
