@@ -1,4 +1,4 @@
-## GPIO components
+## Control the LEDs and button
 
 --- task ---
 
