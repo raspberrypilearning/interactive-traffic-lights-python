@@ -1,6 +1,6 @@
-## What you will need
+## Connect the components
 
-### Hardware
+--- task ---
 
 - Raspberry Pi
 - 3x LEDs and resistors
@@ -13,8 +13,12 @@ Wire up your components to the following GPIO pins:
 
 | Component | GPIO pin |
 | --------- | :------: |
-| Button    | 25       |
-| Red LED   | 24       |
-| Amber LED | 23       |
-| Green LED | 22       |
-| Buzzer    | 5        |
+| Button    | 21       |
+| Red LED   | 25       |
+| Amber LED | 28       |
+| Green LED | 27       |
+| Buzzer    | 15       |
+
+![wiring diagram](images/wiring.png)
+
+--- /task ---
