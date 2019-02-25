@@ -17,6 +17,12 @@ title: What you will need
   - Jumper wires
 - Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
+You'll need to install Mu. Open a Terminal window and type the following command:
+
+```bash
+sudo apt install mu-editor
+```
+
 --- /collapse ---
 
 --- collapse ---

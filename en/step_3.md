@@ -2,7 +2,7 @@
 
 --- task ---
 
-Open **Python 3** from the main menu, and open a new file.
+Open **Mu** from the main menu.
 
 --- /task ---
 
@@ -13,14 +13,14 @@ Enter the following code:
 ```python
 from gpiozero import LED, Button
 
-led = LED(27)
+red = LED(25)
 button = Button(21)
 
 while True:
     if button.is_pressed:
-        led.on()
+        red.on()
     else:
-        led.off()
+        red.off()
 ```
 
 --- /task ---
