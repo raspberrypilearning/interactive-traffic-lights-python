@@ -35,3 +35,17 @@ title: What you will learn
 - Using LEDs, a button and a buzzer with your Raspberry Pi
 
 --- /collapse ---
+
+--- collapse ---
+
+---
+title: Information for Jam organisers
+---
+
+--- no-print ---
+
+If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
+
+--- /no-print ---
+
+--- /collapse ---
