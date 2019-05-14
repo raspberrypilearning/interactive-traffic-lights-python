@@ -2,45 +2,81 @@
 
 ライトのセット全体を制御するだけでなく、各LEDを個別に制御することもできます。 信号機のLED、ボタン、およびブザーを使用すると、歩行者の横断歩行に合わせて独自の信号を作成できます。
 
-1. 自動的に一連のLEDが点灯するようにループを変更します。
-    
-    ```python
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
 while True:
-  lights.green.on()
-  sleep(1)
-  lights.amber.on()
-  sleep(1)
-  lights.red.on()
-  sleep(1)
-  lights.off()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-2. `wait_for_press()`を追加します。ボタンを押すとシーケンスが開始されます。
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
-  button.wait_for_press()
-  lights.green.on()
-  sleep(1)
-  lights.amber.on()
-  sleep(1)
-  lights.red.on()
-  sleep(1)
-  lights.off()
+    button.wait_for_press()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-あなた自身のシーケンスをいくつか試してみてください。
+Try some more sequences of your own.
 
-3. 次に、完全な信号機のシーケンスを作成してみましょう。
-    
-    - 緑オン
-    - 琥珀オン
-    - 赤オン
-    - 赤と琥珀色
-    - 緑オン
-    
-    適切なタイミングでライトをオン/オフして確認してください。また、`sleep`を使用してシーケンスの時間が正しいか計ってください。
+\--- /task \---
 
-4. 歩行者横断のためのボタンを追加してみてください。 ボタンはライトを赤色に (すぐにではなく、歩行者に交差点を横断する時間を与えてから) 変化させるべきです。また、ボタンを再度押してライトを緑色に戻すまで点灯させる必要があります。
+\--- task \---
 
-5. 視覚障害のある歩行者のために、横断が安全であることをビープ音で示すブザーを追加してみましょう。
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
