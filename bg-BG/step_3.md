@@ -1,25 +1,72 @@
-## Компоненти на GPIO
+## Control the LEDs and button
 
-1. Отворете Python 3 от главното меню и отворете нов файл.
+\--- task \---
 
-2. Въведете следния код:
-    
-    ```python
-от индикатора за импортиране на gpiozero, LED бутон = LED (22) бутон = Бутон (25), докато True: if button.is_pressed: led.on () else: led.off
+Open **Mu** from the main menu.
+
+\--- /task \---
+
+\--- task \---
+
+Enter the following code:
+
+```python
+from gpiozero import LED, Button
+
+red = LED(25)
+button = Button(21)
+
+while True:
+    if button.is_pressed:
+        red.on()
+    else:
+        red.off()
 ```
 
-3. Изпълнете кода си с `F5`. Сега, когато натиснете бутона, зеленият светодиод ще се включи.
+\--- /task \---
 
-4. Опитайте да създадете три светодиода:
-    
-    ```python
-от индикатора за внос на gpiozero, червен бутон = LED (24) кехлибарен = LED (23) зелен = LED (22) бутон =
+\--- task \---
+
+Run your code with `F5`. Now when you press the button, the green LED will come on.
+
+\--- /task \---
+
+\--- task \---
+
+Try creating three LEDs:
+
+```python
+from gpiozero import LED, Button
+
+red = LED(25)
+amber = LED(28)
+green = LED(27)
+
+button = Button(21)
 ```
 
-5. Натискайте ги да се включат, когато бутонът бъде натиснат:
-    
-    ```python
-докато True: ако button.is_pressed: green.on () amber.on () red.on () else: green.off () amber.off () red.off ()
+\--- /task \---
+
+\--- task \---
+
+Get them to come on when the button is pressed:
+
+```python
+while True:
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
+    else:
+        green.off()
+        amber.off()
+        red.off()
 ```
 
-6. Изпълнете кода и натиснете бутона.
+\--- /task \---
+
+\--- task \---
+
+Run the code and press the button.
+
+\--- /task \---
