@@ -1,48 +1,72 @@
-## Composants GPIO
+## Control the LEDs and button
 
-1. Lancez Python 3 à partir du menu principal et ouvrez un nouveau fichier.
+\--- task \---
 
-2. Entrez le code suivant:
-    
-    ```python
+Open **Mu** from the main menu.
+
+\--- /task \---
+
+\--- task \---
+
+Enter the following code:
+
+```python
 from gpiozero import LED, Button
 
-led = LED(22)
-bouton = Button(25)
+red = LED(25)
+button = Button(21)
 
 while True:
-    if bouton.is_pressed:
-        led.on()
+    if button.is_pressed:
+        red.on()
     else:
-        led.off()
+        red.off()
 ```
 
-3. Exécutez votre code avec la touche `F5` . Maintenant, lorsque vous appuyez sur le bouton, la DEL verte s'allume.
+\--- /task \---
 
-4. Essayez de créer trois DELs:
-    
-    ```python
+\--- task \---
+
+Run your code with `F5`. Now when you press the button, the green LED will come on.
+
+\--- /task \---
+
+\--- task \---
+
+Try creating three LEDs:
+
+```python
 from gpiozero import LED, Button
 
-rouge = LED(24)
-jaune = LED(23)
-vert = LED(22)
+red = LED(25)
+amber = LED(28)
+green = LED(27)
 
-bouton = Button(25)
+button = Button(21)
 ```
 
-5. Faites les allumer lorsque le bouton est pressé:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Get them to come on when the button is pressed:
+
+```python
 while True:
-    if bouton.is_pressed:
-        vert.on()
-        jaune.on()
-        rouge.on()
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
     else:
         green.off()
-        jaune.off()
-        rouge.off()
+        amber.off()
+        red.off()
 ```
 
-6. Exécutez le code et appuyez sur le bouton.
+\--- /task \---
+
+\--- task \---
+
+Run the code and press the button.
+
+\--- /task \---
