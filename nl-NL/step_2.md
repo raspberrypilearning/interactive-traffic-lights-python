@@ -1,6 +1,6 @@
-## Wat heb je nodig
+## Connect the components
 
-### Hardware
+\--- task \---
 
 - Raspberry Pi
 - 3 LED's en weerstanden
@@ -9,12 +9,16 @@
 - Experimenteer bord
 - Verbindingsdraden
 
-Sluit uw componenten aan op de volgende GPIO-pinnen:
+Wire up your components to the following GPIO pins:
 
 | Component  | GPIO-pin |
 | ---------- |:--------:|
-| Drukknop   |    25    |
-| Rode LED   |    24    |
-| Oranje LED |    23    |
-| Groene LED |    22    |
-| Zoemer     |    5     |
+| Drukknop   |    21    |
+| Rode LED   |    25    |
+| Oranje LED |    28    |
+| Groene LED |    27    |
+| Zoemer     |    15    |
+
+![wiring diagram](images/wiring.png)
+
+\--- /task \---
