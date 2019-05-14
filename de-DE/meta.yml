@@ -2,17 +2,8 @@
 title: Steuere einen interaktiven Verkehrsampel-Ablauf mit Python
 hero_image: images/banner.png
 description: Verwende LEDs, einen Taster und einen Summer, um einen vollständigen Ampel-Ablauf mit Python zu programmieren
-theme: red
-duration: 2
 listed: false
-ingredient: false
 copyedit: false
-curriculum: programming-0, phys-comp-0
-interests: ''
-technologies: electronics, physical computing, python
-site_areas: projects
-hardware: electronic-components
-software: python
 version: 3
 last_tested: 2017-01-01
 steps:
@@ -23,6 +14,6 @@ steps:
   - 
     title: GPIO-Komponenten
   - 
-    title: Verkehrs-Ampel
+    title: Verkehrsampel
   - 
     title: Verkehrsampel-Ablauf
