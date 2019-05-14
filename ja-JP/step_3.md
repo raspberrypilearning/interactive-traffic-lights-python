@@ -1,48 +1,72 @@
-## GPIOコンポーネント
+## Control the LEDs and button
 
-1. メインメニューからPython 3を開き、新しいファイルを開きます。
+\--- task \---
 
-2. 以下のコードを入力します。
-    
-    ```python
+Open **Mu** from the main menu.
+
+\--- /task \---
+
+\--- task \---
+
+Enter the following code:
+
+```python
 from gpiozero import LED, Button
 
-led = LED(22)
-button = Button(25)
+red = LED(25)
+button = Button(21)
 
 while True:
-  if button.is_pressed:
-  led.on()
-  else:
-  led.off()
+    if button.is_pressed:
+        red.on()
+    else:
+        red.off()
 ```
 
-3. `F5`でコードを実行してください。 ボタンを押すと、緑色のLEDが点灯します。
+\--- /task \---
 
-4. 3つのLEDを作成してみてください。
-    
-    ```python
+\--- task \---
+
+Run your code with `F5`. Now when you press the button, the green LED will come on.
+
+\--- /task \---
+
+\--- task \---
+
+Try creating three LEDs:
+
+```python
 from gpiozero import LED, Button
 
-red = LED(24)
-amber = LED(23)
-green = LED(22)
+red = LED(25)
+amber = LED(28)
+green = LED(27)
 
-button = Button(25)
+button = Button(21)
 ```
 
-5. ボタンが押されたときにそれらが反応ようにします：
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Get them to come on when the button is pressed:
+
+```python
 while True:
-  if button.is_pressed:
-    green.on()
-    amber.on()
-    red.on()
-  else:
-    green.off()
-    amber.off()
-    red.off()
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
+    else:
+        green.off()
+        amber.off()
+        red.off()
 ```
 
-6. コードを実行し、ボタンを押します。
+\--- /task \---
+
+\--- task \---
+
+Run the code and press the button.
+
+\--- /task \---
