@@ -1,27 +1,18 @@
 ---
-title: पायथन के साथ एक इंटरैक्टिव ट्रैफिक लाइट्स सीज़न को नियंत्रित करें
+title: Interactive Traffic Lights with Python
 hero_image: छवियों / banner.png
-description: पायथन के साथ एक पूर्ण ट्रैफिक लाइट अनुक्रम को प्रोग्राम करने के लिए एल ई डी, एक बटन और एक बजर का उपयोग करें
-theme: लाल
-duration: 2
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
 listed: false
-ingredient: false
 copyedit: false
-curriculum: प्रोग्रामिंग -0, फिज़-कंप-0
-interests: ''
-technologies: इलेक्ट्रॉनिक्स, भौतिक कंप्यूटिंग, अजगर
-site_areas: projects
-hardware: electronic-components
-software: python
-version: 3
-last_tested: 2017-01-01
+version: 4.1
+last_tested: 2018-11-21
 steps:
   - 
     title: परिचय
   - 
-    title: तुम क्या आवश्यकता होगी
+    title: Connect the components
   - 
-    title: जीपीआईओ घटकों
+    title: Control the LEDs and button
   - 
     title: यातायात बत्तिया
   - 
