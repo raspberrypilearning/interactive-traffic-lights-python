@@ -2,30 +2,81 @@
 
 Az összes lámpa együttes vezérlésével egyenként vezérelheti az egyes LED-eket is. A közlekedési lámpák LED-jei, a gombok és a hangjelző segítségével létrehozhat saját forgalmi jelzőlámpákat, valamint a gyalogos átkelést!
 
-1. Módosítsa hurokját a LED-ek automatizált sorrendjének végrehajtására:
-    
-    ```python
-míg a True: lights.green.on () alvás (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
+while True:
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-2. Add hozzá `wait_for_press ()` így a gomb lenyomása kezdeményezi a sorrendet:
-    
-    ```python
-míg az Igaz: button.wait_for_press () lights.green.on () sleep (1) lights.amber.on () sleep (1) lights.red.on () sleep (1) lights.off ()
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
+while True:
+    button.wait_for_press()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-Próbálj ki néhány saját szekvenciát.
+Try some more sequences of your own.
 
-3. Most próbáld ki a teljes közlekedési lámpa szekvenciát:
-    
-    - Zölden
-    - Borostyán
-    - Piros
-    - Piros és sárga
-    - Zölden
-    
-    Győződjön meg róla, hogy a helyes fényeket be- és kikapcsolja a megfelelő időben, és győződjön meg róla, hogy a `alvás` hogy a szekvencia tökéletesen megfeleljen.
+\--- /task \---
 
-4. Próbálja meg hozzáadni a gyalogos átkeléshez használt gombot. A gombnak a pirosra kell állítania (nem azonnal), és adja meg a gyalogosoknak az időtartamát, mielőtt áthelyezi a fényeket zöldre, amíg a gombot újra megnyomja.
+\--- task \---
 
-5. Most próbáljon meg egy hangjelzést a csipogásra gyorsan jelezni, hogy biztonságos a kereszteződés, a látássérült gyalogosok javára.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
