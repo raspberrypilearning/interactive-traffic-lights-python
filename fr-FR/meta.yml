@@ -1,27 +1,18 @@
 ---
-title: Contrôler une séquence de feux de circulation interactive avec Python
+title: Interactive Traffic Lights with Python
 hero_image: images / banner.png
-description: Utilisez des voyants, un bouton et un buzzer pour programmer une séquence de feux de circulation complète avec Python
-theme: rouge
-duration: 2
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
 listed: false
-ingredient: false
 copyedit: false
-curriculum: programmation-0, phys-comp-0
-interests: ''
-technologies: électronique, informatique physique, python
-site_areas: projects
-hardware: electronic-components
-software: python
-version: 3
-last_tested: 2017-01-01
+version: 4.1
+last_tested: 2018-11-21
 steps:
   - 
     title: introduction
   - 
-    title: Ce dont tu auras besoin
+    title: Connect the components
   - 
-    title: Composants GPIO
+    title: Control the LEDs and button
   - 
     title: Feux de circulation
   - 
