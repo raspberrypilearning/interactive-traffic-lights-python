@@ -2,9 +2,11 @@
 
 Oltre a poter controllare le luci tutte allo stesso tempo, puoi anche controllare ciascun LED individualmente. Con i LED del semaforo, un pulsante e un cicalino, puoi creare la tua sequenza, completa di un passaggio pedonale!
 
-1. Modifica il ciclo in modo da accendere automaticamente i LED:
-    
-    ```python
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
 while True:
     lights.green.on()
     sleep(1)
@@ -15,9 +17,13 @@ while True:
     lights.off()
 ```
 
-2. Aggiungi un `wait_for_press()` in modo tale che la sequenza venga avviata alla pressione del pulsante:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
     button.wait_for_press()
     lights.green.on()
@@ -29,18 +35,48 @@ while True:
     lights.off()
 ```
 
-Prova altre sequenze a tuo piacimento.
+Try some more sequences of your own.
 
-3. Ora prova a creare la sequenza completa dei semafori:
-    
-    - Verde acceso
-    - Ambra
-    - Rosso acceso
-    - Rosso e ambra
-    - Verde acceso
-    
-    Assicurati di accendere e spegnere le luci corrette al momento giusto, e assicurati di usare `sleep` per sincronizzare perfettamente la sequenza.
+\--- /task \---
 
-4. Prova ad aggiungere il pulsante per simulare un passaggio pedonale. Il pulsante dovrebbe spostare far diventare rosso il semaforo (non immediatamente) e dare ai pedoni il tempo di attraversare prima di far diventare di nuovo verde e finché il pulsante non viene premuto nuovamente.
+\--- task \---
 
-5. Ora prova ad aggiungere un cicalino per emettere un segnale acustico per segnalare che è sicuro attraversare la strada, a beneficio dei pedoni ipovedenti.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
