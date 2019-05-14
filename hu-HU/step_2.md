@@ -1,6 +1,6 @@
-## Amire szükséged lesz
+## Connect the components
 
-### Hardver
+\--- task \---
 
 - Raspberry Pi
 - 3x LED-ek és ellenállások
@@ -9,12 +9,16 @@
 - breadboard
 - Jumper vezetékek
 
-Húzza fel az összetevőket a következő GPIO-csapokhoz:
+Wire up your components to the following GPIO pins:
 
 | Összetevő          | GPIO tű |
 | ------------------ |:-------:|
-| Gomb               |   25    |
-| Piros LED          |   24    |
-| Borostyánsárga LED |   23    |
-| Zöld LED           |   22    |
-| Berregő            |    5    |
+| Gomb               |   21    |
+| Piros LED          |   25    |
+| Borostyánsárga LED |   28    |
+| Zöld LED           |   27    |
+| Berregő            |   15    |
+
+![wiring diagram](images/wiring.png)
+
+\--- /task \---
