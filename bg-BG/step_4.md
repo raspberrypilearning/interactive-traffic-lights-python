@@ -1,15 +1,37 @@
 ## Светофар
 
-Можете да използвате вградената `TrafficLights` интерфейс вместо три светодиода.
+You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
-1. Промяна на `от импортиране на gpiozero ...` линия за замяна `LED` с `TrafficLights`:
-    
-    ```python
-от gpiozero импортиране на TrafficLights, бутон от бутона за време за внос на сън = бутон (25) светлини = TrafficLights (24, 23, 22), докато True: button.wait_for_press () lights.on
+\--- task \---
+
+Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+
+```python
+from gpiozero import TrafficLights, Button
+from time import sleep
+
+button = Button(21)
+lights = TrafficLights(25, 28, 27)
+
+while True:
+    button.wait_for_press()
+    lights.on()
+    button.wait_for_release()
+    lights.off()
 ```
 
-2. Опитайте да промените осветлението на `мига`:
-    
-    ```python
-докато Истина: lights.blink () button.wait_for_press () lights.off () button.wait_for_release ()
+\--- /task \---
+
+\--- task \---
+
+Try changing the lights to `blink`:
+
+```python
+while True:
+    lights.blink()
+    button.wait_for_press()
+    lights.off()
+    button.wait_for_release()
 ```
+
+\--- /task \---
