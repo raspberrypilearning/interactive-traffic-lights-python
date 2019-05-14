@@ -1,15 +1,37 @@
 ## Feux de circulation
 
-Vous pouvez utiliser la fonction intégrée `TrafficLights` interface au lieu de trois LED.
+You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
-1. Modifier le `depuis gpiozero import ...` ligne à remplacer `LED` avec `TrafficLights`:
-    
-    ```python
-à partir de gpiozero import TrafficLights, bouton de temps import bouton de veille = Button (25) lights = TrafficLights (24, 23, 22) alors que True: button.wait_for_press () lights.on () button.wait_for_release () lights.off ()
+\--- task \---
+
+Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+
+```python
+from gpiozero import TrafficLights, Button
+from time import sleep
+
+button = Button(21)
+lights = TrafficLights(25, 28, 27)
+
+while True:
+    button.wait_for_press()
+    lights.on()
+    button.wait_for_release()
+    lights.off()
 ```
 
-2. Essayez de changer les lumières à `blink`:
-    
-    ```python
-alors que True: lights.blink () button.wait_for_press () lights.off () button.wait_for_release ()
+\--- /task \---
+
+\--- task \---
+
+Try changing the lights to `blink`:
+
+```python
+while True:
+    lights.blink()
+    button.wait_for_press()
+    lights.off()
+    button.wait_for_release()
 ```
+
+\--- /task \---
