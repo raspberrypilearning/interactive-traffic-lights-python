@@ -1,25 +1,72 @@
-## Composants GPIO
+## Control the LEDs and button
 
-1. Ouvrez Python 3 à partir du menu principal et ouvrez un nouveau fichier.
+\--- task \---
 
-2. Entrez le code suivant:
-    
-    ```python
-à partir de LED d'importation gpiozero, bouton led = LED (22) bouton = bouton (25) alors que vrai: si button.is_pressed: led.on () else: led.off ()
+Open **Mu** from the main menu.
+
+\--- /task \---
+
+\--- task \---
+
+Enter the following code:
+
+```python
+from gpiozero import LED, Button
+
+red = LED(25)
+button = Button(21)
+
+while True:
+    if button.is_pressed:
+        red.on()
+    else:
+        red.off()
 ```
 
-3. Lancez votre code avec `F5`. Maintenant, lorsque vous appuyez sur le bouton, la LED verte s'allume.
+\--- /task \---
 
-4. Essayez de créer trois LED:
-    
-    ```python
-à partir de la LED d'importation gpiozero, bouton rouge = LED (24) ambre = LED (23) vert = LED (22) touche = Bouton (25)
+\--- task \---
+
+Run your code with `F5`. Now when you press the button, the green LED will come on.
+
+\--- /task \---
+
+\--- task \---
+
+Try creating three LEDs:
+
+```python
+from gpiozero import LED, Button
+
+red = LED(25)
+amber = LED(28)
+green = LED(27)
+
+button = Button(21)
 ```
 
-5. Amenez-les à venir quand le bouton est pressé:
-    
-    ```python
-alors que True: si button.is_pressed: green.on () amber.on () red.on () sinon: green.off () amber.off () red.off ()
+\--- /task \---
+
+\--- task \---
+
+Get them to come on when the button is pressed:
+
+```python
+while True:
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
+    else:
+        green.off()
+        amber.off()
+        red.off()
 ```
 
-6. Exécutez le code et appuyez sur le bouton.
+\--- /task \---
+
+\--- task \---
+
+Run the code and press the button.
+
+\--- /task \---
