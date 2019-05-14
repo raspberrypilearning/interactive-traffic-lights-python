@@ -1,6 +1,6 @@
-## Ce dont tu auras besoin
+## Connect the components
 
-### Matériel
+\--- task \---
 
 - Tarte aux framboises
 - LED et résistances 3x
@@ -9,12 +9,16 @@
 - Planche à pain
 - Fils de cavalier
 
-Connectez vos composants aux broches GPIO suivantes:
+Wire up your components to the following GPIO pins:
 
 | Composant          | GPIO |
 | ------------------ |:----:|
-| Bouton             |  25  |
-| LED rouge          |  24  |
-| LED ambre          |  23  |
-| LED verte          |  22  |
-| Avertisseur sonore |  5   |
+| Bouton             |  21  |
+| LED rouge          |  25  |
+| LED ambre          |  28  |
+| LED verte          |  27  |
+| Avertisseur sonore |  15  |
+
+![wiring diagram](images/wiring.png)
+
+\--- /task \---
