@@ -2,30 +2,81 @@
 
 Освен контрола на целия комплект светлини заедно, можете също да контролирате всеки светодиод индивидуално. С светодиодите със светофар, бутон и зумер можете да създадете собствена последователност на светофара, допълнена с пешеходна пътека!
 
-1. Променете своя цикъл, за да извършите автоматична последователност от светещи светодиоди:
-    
-    ```python
-(1) светлини () заспиване (1) светлини () заспиване (1)
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
+while True:
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-2. Добавете `wait_for_press ()` така че натискането на бутона инициира последователността:
-    
-    ```python
-() заспиване (1) светлини () заспиване (1) светкавица () заспиване (1)
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
+while True:
+    button.wait_for_press()
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-Опитайте още няколко последователности от вашите собствени.
+Try some more sequences of your own.
 
-3. Сега опитайте да създадете пълната последователност на светофарите:
-    
-    - Зелено на
-    - Амбър на
-    - Червено включено
-    - Червено и кехлибарено
-    - Зелено на
-    
-    Уверете се, че включите и изключите правилните светлини в точното време и се уверете, че използвате `sleep` за да се насладите перфектно последователността.
+\--- /task \---
 
-4. Опитайте да добавите бутона за преминаване на пешеходци. Бутонът трябва да премества светлинните индикатори в червено (не веднага) и да даде на пешеходците време да преминат, преди да преместят осветлението обратно в зелено, докато бутонът бъде натиснат отново.
+\--- task \---
 
-5. Сега опитайте да добавите бързо звънец, за да покажете, че е безопасно да преминете, в полза на пешеходците с увредено зрение.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
