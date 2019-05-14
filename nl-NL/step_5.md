@@ -2,45 +2,81 @@
 
 Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk bedienen. Met LEDs, een drukknop en een zoemer kan je jouw eigen verkeerslicht maken, compleet met oversteekplaats voor voetgangers !
 
-1. Pas je lus aan om de LED's ​​automatisch in volgorde te laten branden:
-    
-    ```python
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
 while True:
-    lights.groen.on()
+    lights.green.on()
     sleep(1)
-    lights.oranje.on()
+    lights.amber.on()
     sleep(1)
-    lights.rood.on()
+    lights.red.on()
     sleep(1)
     lights.off()
 ```
 
-2. Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks in gang zet:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
     button.wait_for_press()
-    lights.groen.on()
+    lights.green.on()
     sleep(1)
-    lights.oranje.on()
+    lights.amber.on()
     sleep(1)
-    lights.rood.on()
+    lights.red.on()
     sleep(1)
     lights.off()
 ```
 
-Probeer je eigen reeks te maken.
+Try some more sequences of your own.
 
-3. Probeer nu de volledige reeks voor een verkeerslicht te maken:
-    
-    - Groen aan, rood uit
-    - Oranje aan, groen uit
-    - Rood aan, oranje uit
-    - 
-    - 
-    
-    Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat je steeds de juiste `sleep` periode gebruikt om de volgorde perfect te timen.
+\--- /task \---
 
-4. Probeer de knop voor een zebrapad toe te voegen. De knop moet de lichten (niet onmiddellijk) op rood zetten en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
+\--- task \---
 
-5. Laat nu ten behoeve van visueel gehandicapte voetgangers een zoemer snel piepen om aan te geven dat het veilig is om over te steken.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
