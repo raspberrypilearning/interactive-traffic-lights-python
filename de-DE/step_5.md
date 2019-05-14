@@ -2,47 +2,81 @@
 
 Du kannst nicht nur die gesamte Lampengruppe steuern, sondern auch jede LED einzeln. Mit Ampel-LEDs, einem Taster und einem Summer kannst du deinen eigenen Ampel-Ablauf mit Fußgängerübergang erstellen!
 
-1. Ändere deine Schleife, um folgenden automatisierten Ablauf der LEDs zu erzeugen:
-    
-    ```python
-while True:
-    lampen.green.on()
-    sleep(1)
-    lampen.amber.on()
-    sleep(1)
-    lampen.red.on()
-    sleep(1)
-    lampen.off()
+\--- task \---
 
-Red, amber und green sind Parameter des TrafficLight-APIs und stehen für die Farben rot, gelb und grün.
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
+while True:
+    lights.green.on()
+    sleep(1)
+    lights.amber.on()
+    sleep(1)
+    lights.red.on()
+    sleep(1)
+    lights.off()
 ```
 
-2. Füge ein `wait_for_press ()` hinzu so dass das Drücken der Taste die Sequenz startet:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
-    taster.wait_for_press()
-    lampen.green.on()
+    button.wait_for_press()
+    lights.green.on()
     sleep(1)
-    lampen.amber.on()
+    lights.amber.on()
     sleep(1)
-    lampen.red.on()
+    lights.red.on()
     sleep(1)
-    lampen.off()
+    lights.off()
 ```
 
-Probiere einige weitere Abläufe aus.
+Try some more sequences of your own.
 
-3. Versuche nun, den vollständigen Ampel-Ablauf zu erstellen:
-    
-    - Grün an
-    - Gelb an
-    - Rot an
-    - Rot und Gelb an
-    - Grün an
-    
-    Stelle sicher, dass die richtigen Lichter zur richtigen Zeit ein- und ausschalten, und stelle sicher, dass du `sleep` verwendest um den richtigen Zeitablauf zu haben.
+\--- /task \---
 
-4. Füge den Knopf für einen Fußgängerübergang hinzu. Die Taste sollte die Ampel auf rot (nicht sofort) stellen und den Fußgängern Zeit zum Überqueren geben, bevor die Ampel wieder grün wird. Die Ampel bleibt grün bis die Taste erneut gedrückt wird.
+\--- task \---
 
-5. Versuche jetzt, einen Summer hinzuzufügen, der schnell piept, um sehbehinderten Fußgängern anzuzeigen, dass sie gefahrlos überqueren können.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
