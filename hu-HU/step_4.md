@@ -1,15 +1,37 @@
 ## Közlekedési lámpák
 
-Használhatja a beépített `TrafficLights` -t három LED helyett.
+You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
-1. A `a gpiozero import ...` módosítása | vonal helyett `LED` `TrafficLights`:
-    
-    ```python
-a gpiozero importálással TrafficLights, gomb az importálás pillanatától kezdve = gomb (25) világít = TrafficLights (24, 23, 22), miközben True: gomb.wait_for_press () lights.on () gomb.wait_for_release () lights.off ()
+\--- task \---
+
+Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+
+```python
+from gpiozero import TrafficLights, Button
+from time import sleep
+
+button = Button(21)
+lights = TrafficLights(25, 28, 27)
+
+while True:
+    button.wait_for_press()
+    lights.on()
+    button.wait_for_release()
+    lights.off()
 ```
 
-2. Próbálja megváltoztatni a fényeket a `villog`:
-    
-    ```python
-míg a True: lights.blink () gomb.wait_for_press () lights.off () gomb.wait_for_release ()
+\--- /task \---
+
+\--- task \---
+
+Try changing the lights to `blink`:
+
+```python
+while True:
+    lights.blink()
+    button.wait_for_press()
+    lights.off()
+    button.wait_for_release()
 ```
+
+\--- /task \---
