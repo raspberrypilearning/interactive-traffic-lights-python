@@ -2,45 +2,81 @@
 
 En plus de contrôler les feux tous ensemble, vous pouvez aussi contrôler les DELs individuellement. Avec des DELs, un bouton et un avertisseur sonore, vous pouvez créer votre propre séquence de feux de circulation complète, avec une traverse de piétons!
 
-1. Modifiez votre boucle pour exécuter une séquence automatisée d'allumage de DELs:
-    
-    ```python
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
 while True:
-    feux.green.on()
+    lights.green.on()
     sleep(1)
-    feux.amber.on()
+    lights.amber.on()
     sleep(1)
-    feux.red.on()
+    lights.red.on()
     sleep(1)
-    feux.off()
+    lights.off()
 ```
 
-2. Ajouter un `wait_for_press()` de sorte que le fait d'appuyer sur le bouton initie la séquence:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
-    bouton.wait_for_press()
-    feux.green.on()
+    button.wait_for_press()
+    lights.green.on()
     sleep(1)
-    feux.amber.on()
+    lights.amber.on()
     sleep(1)
-    feux.red.on()
+    lights.red.on()
     sleep(1)
-    feux.off()
+    lights.off()
 ```
 
-Essayez d'autres séquences de votre choix.
+Try some more sequences of your own.
 
-3. Maintenant, essayez de créer la séquence complète des feux de circulation:
-    
-    - Vert on
-    - Jaune on
-    - Rouge on
-    - Vert on
-    - ...
-    
-    Assurez-vous d'allumer et d'éteindre les bons feux au bon moment et assurez-vous d'utiliser `sleep` pour contrôler la durée de chaque étape la séquence.
+\--- /task \---
 
-4. Essayez d'ajouter le bouton pour un passage pour piétons. Le bouton devrait faire passer les feux au rouge (pas immédiatement), et donner aux piétons le temps de traverser avant de remettre les feux au vert, jusqu'à ce que le bouton soit pressé à nouveau.
+\--- task \---
 
-5. Maintenant essayez d'ajouter un bip sonore rapide pour indiquer aux personnes malvoyantes qu'il est sécuritaire de traverser.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
