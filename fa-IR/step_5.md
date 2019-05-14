@@ -2,9 +2,11 @@
 
 ضمن کنترل تمام مجموعه‌ی چراغ ها، می‌توانید هر LED را به صورت جداگانه کنترل کنید. با LED های چراغ راهنمایی، یک دکمه و زنگ، شما می توانید دنباله چراغ راهنمای خود را ایجاد کنید، با افزودن امکان عبور عابر پیاده، آن را کامل نمایید!
 
-1. حلقه تکرار برنامه‌ی خود را برای اجرای یک دنباله‌ی خودکار از LEDهایی که روشن می‌شود، اصلاح نمایید:
-    
-    ```python
+\--- task \---
+
+Modify your loop to perform an automated sequence of LEDs being lit:
+
+```python
 while True:
     lights.green.on()
     sleep(1)
@@ -15,9 +17,13 @@ while True:
     lights.off()
 ```
 
-2. اضافه کردن `wait_for_press ()` به طوری که فشار دادن دکمه دنباله را آغاز می کند:
-    
-    ```python
+\--- /task \---
+
+\--- task \---
+
+Add a `wait_for_press()` so that pressing the button initiates the sequence:
+
+```python
 while True:
     button.wait_for_press()
     lights.green.on()
@@ -29,18 +35,48 @@ while True:
     lights.off()
 ```
 
-خودتان دنباله‌های بیشتری را امتحان کنید.
+Try some more sequences of your own.
 
-3. حال سعی کنید دنباله کامل چراغ راهنمایی ایجاد کنید:
-    
-    - سبز روشن
-    - زرد روشن
-    - قرمز روشن
-    - قرمز و زرد روشن
-    - سبز روشن
-    
-    مطمئن شوید که چراغ‌های درست را در زمان صحیح روشن و خاموش می‌کنید و مطمئن شوید که از `sleep` برای زمان‌بندی مناسب دنباله استفاده کرده‌اید.
+\--- /task \---
 
-4. سعی کنید دکمه را برای گذر عابر پیاده اضافه کنید. این دکمه باید چراغ را به رنگ قرمز (نه بلافاصله) تغییر دهد و قبل از تغییر دوباره به چراغ سبز، تا زمانی که دکمه دوباره فشار داده شود، زمان لازم را به عابر پیاده برای عبور بدهد.
+\--- task \---
 
-5. حال سعی کنید برای عابرین پیاده که مشکل بینایی دارند، یک زنگ هشدار که با بوق زدن سریع، عبور امن را نشان می دهد، اضافه کنید.
+Now try creating the full traffic lights sequence:
+
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
+
+Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+
+\--- /task \---
+
+\--- task \---
+
+Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+
+\--- /task \---
+
+\--- task \---
+
+Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+
+```python
+buzzer = Buzzer(15)
+
+buzzer.on()
+buzzer.off()
+buzzer.beep(0.1, 0.1)
+```
+
+\--- /task \---
+
+Your final interactive traffic lights code should start on a green light and then:
+
+- Wait for the button to be pressed
+- When pressed, change to red/amber, then green
+- Beep for a while to say it's time to cross
+- Go to amber and then green
+- Repeat
