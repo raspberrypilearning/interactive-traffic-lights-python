@@ -43,11 +43,11 @@ Try some more sequences of your own.
 
 Now try creating the full traffic lights sequence:
 
-- Green on
-- Amber on
-- Red on
-- Red and amber on
-- Green on
+- हरा चालू (Green on)
+- पीली चालू (Amber on)
+- लाल चालू (Red on)
+- लाल और पीली चालू (Red and amber on)
+- हरी चालू (Green on)
 
 Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
 
