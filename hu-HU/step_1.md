@@ -1,23 +1,23 @@
 ## Bevezetés
 
-Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python.
+LED-ek, egy gomb és egy berregő segítségével programozz egy interaktív közlekedési lámpát Pythonban.
 
 \--- collapse \---
 
 * * *
 
-## title: What you will need
+## title: Amire szükséged lesz
 
-- Raspberry Pi computer
-- Components: 
-  - 3x LEDs and resistors
-  - Button
-  - Buzzer
-  - Breadboard
-  - Jumper wires
-- Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
+- Raspberry Pi számítógép
+- Komponensek: 
+  - 3 LED és ellenállás
+  - Gomb
+  - Berregő
+  - Próbapanel
+  - Áthidaló vezetékek
+- Ehelyett használhatsz egy Traffic HAT komponenst (vagy egy pi-stop komponenst a LED-ek helyett), és használhatsz más tűszámokat
 
-You'll need to install Mu. Open a Terminal window and type the following command:
+Fel kell tepelítened a Mu-t. Nyiss meg egy Terminál ablakot, majd írd be az alábbi parancsot:
 
 ```bash
 sudo apt install mu-editor
@@ -29,10 +29,10 @@ sudo apt install mu-editor
 
 * * *
 
-## title: What you will learn
+## title: Amit meg fogsz tanulni
 
-- Controlling your Raspberry Pi's GPIO pins using Python
-- Using LEDs, a button and a buzzer with your Raspberry Pi
+- A Raspberry Pi GPIO tűinek vezérlése Pythonban
+- LED-ek, gomb és berregő használata Raspberry Pi-jal
 
 \--- /collapse \---
 
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Information for Jam organisers
+## title: Információ Jam szervezőknek
 
 \--- no-print \---
 
-If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
+Ha ki kell nyomtatnod a projektet, elérhető egy [PDF verzió](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf). Olvass el minden megjegyzést ezen az oldalon a nyomtatás előtt.
 
 \--- /no-print \---
 
