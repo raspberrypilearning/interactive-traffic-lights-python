@@ -4,7 +4,7 @@ You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
 \--- task \---
 
-Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+Vervang in de `from gpiozero import...` regel de `LED` met `TrafficLights`:
 
 ```python
 from gpiozero import TrafficLights, Button
@@ -24,7 +24,7 @@ while True:
 
 \--- task \---
 
-Try changing the lights to `blink`:
+Probeer de lichten te veranderen naar `blink` (knipperen):
 
 ```python
 while True:
