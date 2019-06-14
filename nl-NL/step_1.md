@@ -1,6 +1,6 @@
 ## Inleiding
 
-Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python.
+Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslichten met Python te programmeren.
 
 \--- collapse \---
 
@@ -10,11 +10,11 @@ Use LEDs, a button and a buzzer to program an interactive traffic lights sequenc
 
 - Raspberry Pi computer
 - Components: 
-  - 3x LEDs and resistors
-  - Button
-  - Buzzer
-  - Breadboard
-  - Jumper wires
+  - 3 LED's en weerstanden
+  - Drukknop
+  - Zoemer
+  - Experimenteer bord
+  - Verbindingsdraden
 - Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
 You'll need to install Mu. Open a Terminal window and type the following command:
@@ -29,7 +29,7 @@ sudo apt install mu-editor
 
 * * *
 
-## title: What you will learn
+## title: Wat ga je leren
 
 - Controlling your Raspberry Pi's GPIO pins using Python
 - Using LEDs, a button and a buzzer with your Raspberry Pi
