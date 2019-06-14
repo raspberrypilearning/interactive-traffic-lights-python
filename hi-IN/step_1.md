@@ -6,7 +6,7 @@ Use LEDs, a button and a buzzer to program an interactive traffic lights sequenc
 
 * * *
 
-## title: What you will need
+## title: आपको किन चीजों की आवश्यकता होगी
 
 - Raspberry Pi computer
 - Components: 
@@ -29,7 +29,7 @@ sudo apt install mu-editor
 
 * * *
 
-## title: What you will learn
+## title: आप क्या सीखेंगे
 
 - Controlling your Raspberry Pi's GPIO pins using Python
 - Using LEDs, a button and a buzzer with your Raspberry Pi
