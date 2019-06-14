@@ -1,14 +1,14 @@
-## Control the LEDs and button
+## GPIO-componenten
 
 \--- task \---
 
 Open **Mu** from the main menu.
 
-\--- /task \---
+\---/task\---
 
 \--- task \---
 
-Enter the following code:
+Voer de volgende code in:
 
 ```python
 from gpiozero import LED, Button
@@ -27,46 +27,46 @@ while True:
 
 \--- task \---
 
-Run your code with `F5`. Now when you press the button, the green LED will come on.
+Voer je code uit met `F5`. Wanneer je nu op de knop drukt, gaat de groene LED branden.
 
 \--- /task \---
 
 \--- task \---
 
-Try creating three LEDs:
+Probeer drie LED's aan te sluiten:
 
 ```python
 from gpiozero import LED, Button
 
-red = LED(25)
-amber = LED(28)
-green = LED(27)
+rood = LED(25)
+oranje = LED(28)
+groen = LED(27)
 
 button = Button(21)
 ```
 
-\--- /task \---
+-- /task \---
 
-\--- task \---
+\--- task \----
 
-Get them to come on when the button is pressed:
+Laat ze oplichten als de knop wordt ingedrukt:
 
 ```python
 while True:
     if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
+        groen.on()
+        oranje.on()
+        rood.on()
     else:
-        green.off()
-        amber.off()
-        red.off()
+        groen.off()
+        oranje.off()
+        rood.off()
 ```
 
 \--- /task \---
 
-\--- task \---
+\--- taak \---
 
-Run the code and press the button.
+Voer de code uit en druk op de knop.
 
 \--- /task \---
