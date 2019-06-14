@@ -4,15 +4,15 @@ Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk
 
 \--- task \---
 
-Modify your loop to perform an automated sequence of LEDs being lit:
+Pas je lus aan om de LED's ​​automatisch in volgorde te laten branden:
 
 ```python
 while True:
-    lights.green.on()
+    lights.groen.on()
     sleep(1)
-    lights.amber.on()
+    lights.oranje.on()
     sleep(1)
-    lights.red.on()
+    lights.rood.on()
     sleep(1)
     lights.off()
 ```
@@ -21,47 +21,47 @@ while True:
 
 \--- task \---
 
-Add a `wait_for_press()` so that pressing the button initiates the sequence:
+Voeg een `wait_for_press ()` toe zodat het indrukken van de knop de reeks in gang zet:
 
 ```python
 while True:
     button.wait_for_press()
-    lights.green.on()
+    lights.groen.on()
     sleep(1)
-    lights.amber.on()
+    lights.oranje.on()
     sleep(1)
-    lights.red.on()
+    lights.rood.on()
     sleep(1)
     lights.off()
 ```
 
-Try some more sequences of your own.
+Probeer je eigen reeks te maken.
 
 \--- /task \---
 
-\--- task \---
+\--- task \----
 
-Now try creating the full traffic lights sequence:
+Probeer nu de volledige reeks voor een verkeerslicht te maken:
 
-- Green on
-- Amber on
-- Red on
-- Red and amber on
-- Green on
+- Rood uit, groen aan
+- Groen uit, oranje aan
+- Oranje uit, rood aan
+- Rood en oranje aan
+- Groen aan
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat je steeds de juiste `sleep` periode gebruikt om de volgorde perfect te timen.
+
+-- /task \---
+
+\--- task \----
+
+Probeer de knop voor een zebrapad toe te voegen. De knop moet de lichten (niet onmiddellijk) op rood zetten en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
 
 \--- /task \---
 
-\--- task \---
+\--- taak \---
 
-Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
-
-\--- /task \---
-
-\--- task \---
-
-Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+Laat nu ten behoeve van visueel gehandicapte voetgangers een zoemer snel piepen om aan te geven dat het veilig is om over te steken:
 
 ```python
 buzzer = Buzzer(15)
