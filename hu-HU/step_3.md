@@ -1,46 +1,46 @@
-## Control the LEDs and button
+## Vezéreld a LED-eket és a gombot
 
 \--- task \---
 
-Open **Mu** from the main menu.
+Indítsd el a **Mu**-t a főmenüből.
 
 \--- /task \---
 
 \--- task \---
 
-Enter the following code:
+Írd be az alábbi kódot:
 
 ```python
 from gpiozero import LED, Button
 
-red = LED(25)
-button = Button(21)
+piros = LED(25)
+gomb = Button(21)
 
 while True:
-    if button.is_pressed:
-        red.on()
+    if gomb.is_pressed:
+        piros.on()
     else:
-        red.off()
+        piros.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Run your code with `F5`. Now when you press the button, the green LED will come on.
+Futtasd a kódodat `F5`-tel. Ha most megnyomod a gombot, a piros LED bekapcsol.
 
 \--- /task \---
 
 \--- task \---
 
-Try creating three LEDs:
+Próbálj meg létrehozni három LED-et:
 
 ```python
 from gpiozero import LED, Button
 
-red = LED(25)
-amber = LED(28)
-green = LED(27)
+piros = LED(25)
+sarga = LED(28)
+zold = LED(27)
 
 button = Button(21)
 ```
@@ -49,24 +49,24 @@ button = Button(21)
 
 \--- task \---
 
-Get them to come on when the button is pressed:
+Érd el, hogy mindhárom bekapcsoljon, ha megnyomod a gombot:
 
 ```python
 while True:
     if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
+        zold.on()
+        sarga.on()
+        piros.on()
     else:
-        green.off()
-        amber.off()
-        red.off()
+        zold.off()
+        sarga.off()
+        piros.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Run the code and press the button.
+Futtasd a kódot és nyomd meg a gombot.
 
 \--- /task \---
