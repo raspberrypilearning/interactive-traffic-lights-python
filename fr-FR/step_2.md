@@ -1,24 +1,24 @@
-## Connect the components
+## Connecter les composants
 
 \--- task \---
 
-- Tarte aux framboises
-- LED et résistances 3x
+- Raspberry Pi
+- 3x LEDs et résistances
 - Bouton
-- Avertisseur sonore
-- Planche à pain
-- Fils de cavalier
+- Buzzer
+- Plaquette d'expérimentation
+- Fils de connexion
 
-Wire up your components to the following GPIO pins:
+Branche tes composants aux broches GPIO suivantes :
 
-| Composant          | GPIO |
-| ------------------ |:----:|
-| Bouton             |  21  |
-| LED rouge          |  25  |
-| LED ambre          |  28  |
-| LED verte          |  27  |
-| Avertisseur sonore |  15  |
+| Composant  | Broche GPIO |
+| ---------- |:-----------:|
+| Bouton     |     21      |
+| LED rouge  |     25      |
+| LED orange |     28      |
+| LED verte  |     27      |
+| Buzzer     |     15      |
 
-![wiring diagram](images/wiring.png)
+![schéma de câblage](images/wiring.png)
 
 \--- /task \---
