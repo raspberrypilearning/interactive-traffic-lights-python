@@ -73,10 +73,10 @@ buzzer.beep(0.1, 0.1)
 
 \--- /task \---
 
-Your final interactive traffic lights code should start on a green light and then:
+Je laatste interactieve verkeerslichtcode moet beginnen met een groen licht en vervolgens:
 
-- Wait for the button to be pressed
-- When pressed, change to red/amber, then green
-- Beep for a while to say it's time to cross
-- Go to amber and then green
-- Repeat
+- Wacht tot de knop wordt ingedrukt
+- Wanneer ingedrukt, verander naar rood/oranje, dan groen
+- Piep een tijdje om te zeggen dat het tijd is om over te steken
+- Ga naar oranje en vervolgens groen
+- Herhaal
