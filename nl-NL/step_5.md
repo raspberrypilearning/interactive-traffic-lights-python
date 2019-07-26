@@ -59,7 +59,7 @@ Probeer de knop voor een zebrapad toe te voegen. De knop moet de lichten (niet o
 
 --- /task ---
 
---- taak ---
+--- task ---
 
 Laat nu ten behoeve van visueel gehandicapte voetgangers een zoemer snel piepen om aan te geven dat het veilig is om over te steken:
 

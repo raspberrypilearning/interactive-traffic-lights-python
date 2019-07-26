@@ -65,7 +65,7 @@ while True:
 
 --- /task ---
 
---- taak ---
+--- task ---
 
 Voer de code uit en druk op de knop.
 
