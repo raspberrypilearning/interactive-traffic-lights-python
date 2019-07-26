@@ -1,39 +1,57 @@
-## GPIO-componenten
+## Bedien de LED's en de knop
 
-1. Open Python 3 in het hoofdmenu en open een nieuw bestand.
+--- task ---
 
-2. Voer de volgende code in:
-    
-    ```python
+Open **Mu** vanuit het hoofdmenu.
+
+--- /task ---
+
+--- task ---
+
+Voer de volgende code in:
+
+```python
 from gpiozero import LED, Button
 
-led = LED(22)
-button = Button(25)
+red = LED(25)
+button = Button(21)
 
 while True:
     if button.is_pressed:
-        led.on()
+        red.on()
     else:
-        led.off()
+        red.off()
 ```
 
-3. Voer je code uit met `F5`. Wanneer je nu op de knop drukt, gaat de groene LED branden.
+--- /task ---
 
-4. Probeer drie LED's aan te sluiten:
-    
-    ```python
+--- task ---
+
+Voer je code uit met `F5`. Wanneer je nu op de knop drukt, gaat de groene LED branden.
+
+--- /task ---
+
+--- task ---
+
+Probeer drie LED's aan te sluiten:
+
+```python
 from gpiozero import LED, Button
 
-rood = LED(24)
-oranje = LED(23)
-groen = LED(22)
+rood = LED(25)
+oranje = LED(28)
+groen = LED(27)
 
-button = Button(25)
+button = Button(21)
 ```
 
-5. Laat ze oplichten als de knop wordt ingedrukt:
-    
-    ```python
+--- /task ---
+
+--- task ---
+
+Laat ze oplichten als de knop wordt ingedrukt:
+
+```python
 while True:
     if button.is_pressed:
         groen.on()
@@ -45,4 +63,10 @@ while True:
         rood.off()
 ```
 
-6. Voer de code uit en druk op de knop.
+--- /task ---
+
+--- taak ---
+
+Voer de code uit en druk op de knop.
+
+--- /task ---
