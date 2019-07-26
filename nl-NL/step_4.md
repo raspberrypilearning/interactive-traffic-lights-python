@@ -1,6 +1,6 @@
 ## Verkeerslichten
 
-You can use the built-in `TrafficLights` class instead of three individual LEDs.
+Je kunt de ingebouwde `TrafficLights` klasse gebruiken in plaats van drie losse LED's.
 
 \--- task \---
 
