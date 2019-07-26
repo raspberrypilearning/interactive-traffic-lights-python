@@ -9,15 +9,15 @@ Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslicht
 ## title: What you will need
 
 - Raspberry Pi computer
-- Components: 
+- Componenten: 
   - 3 LED's en weerstanden
   - Drukknop
   - Zoemer
   - Experimenteer bord
   - Verbindingsdraden
-- Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
+- Je kunt ook een Traffic HAT (of een pi-stop in plaats van de LED's) gebruiken - en verschillende pinnummers gebruiken
 
-You'll need to install Mu. Open a Terminal window and type the following command:
+Je zult Mu moeten installeren. Open een terminalvenster en voer de volgende opdracht in:
 
 ```bash
 sudo apt install mu-editor
@@ -31,8 +31,8 @@ sudo apt install mu-editor
 
 ## title: Wat ga je leren
 
-- Controlling your Raspberry Pi's GPIO pins using Python
-- Using LEDs, a button and a buzzer with your Raspberry Pi
+- De GPIO-pinnen van je Raspberry Pi aansturen met Python
+- Gebruik van LED's, een knop en een zoemer met jouw Raspberry Pi
 
 \--- /collapse \---
 
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Information for Jam organisers
+## title: Informatie voor Jam organisatoren
 
 \--- no-print \---
 
-If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
+Als je dit project wilt afdrukken, is er een [PDF-versie](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) beschikbaar. Let op de opmerkingen op deze pagina voordat je gaat afdrukken.
 
 \--- /no-print \---
 
