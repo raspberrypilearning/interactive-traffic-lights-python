@@ -17,7 +17,7 @@ LED-ek, egy gomb és egy berregő segítségével programozz egy interaktív kö
   - Áthidaló vezetékek
 - Ehelyett használhatsz egy Traffic HAT komponenst (vagy egy pi-stop komponenst a LED-ek helyett), és használhatsz más tűszámokat
 
-Fel kell tepelítened a Mu-t. Nyiss meg egy Terminál ablakot, majd írd be az alábbi parancsot:
+Fel kell telepítened a Mu-t. Nyiss meg egy Terminál ablakot, majd írd be az alábbi parancsot:
 
 ```bash
 sudo apt install mu-editor
