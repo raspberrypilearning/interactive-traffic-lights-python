@@ -19,6 +19,6 @@ Sluit uw componenten aan op de volgende GPIO-pinnen:
 | Groene LED |    27    |
 | Zoemer     |    15    |
 
-![wiring diagram](images/wiring.png)
+![elektrisch schema](images/wiring.png)
 
 \--- /task \---
