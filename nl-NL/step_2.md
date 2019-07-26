@@ -1,20 +1,24 @@
-## Wat heb je nodig
+## Verbind de componenten
 
-### Hardware
+--- task ---
 
 - Raspberry Pi
 - 3 LED's en weerstanden
-- Schakelaar
+- Drukknop
 - Zoemer
 - Experimenteer bord
 - Verbindingsdraden
 
-Sluit je componenten op de volgende GPIO-pinnen aan:
+Sluit uw componenten aan op de volgende GPIO-pinnen:
 
-| Onderdeel  | GPIO-pin |
+| Component  | GPIO-pin |
 | ---------- |:--------:|
-| Schakelaar |    25    |
-| Rode LED   |    24    |
-| Oranje LED |    23    |
-| Groene LED |    22    |
-| Zoemer     |    5     |
+| Drukknop   |    21    |
+| Rode LED   |    25    |
+| Oranje LED |    28    |
+| Groene LED |    27    |
+| Zoemer     |    15    |
+
+![elektrisch schema](images/wiring.png)
+
+--- /task ---
