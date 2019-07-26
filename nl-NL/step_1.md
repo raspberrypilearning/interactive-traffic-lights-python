@@ -6,7 +6,7 @@ Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslicht
 
 * * *
 
-## title: What you will need
+## title: Wat heb je nodig
 
 - Raspberry Pi computer
 - Componenten: 
