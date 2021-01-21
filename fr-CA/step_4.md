@@ -12,9 +12,9 @@ from gpiozero import TrafficLights, Button
 from time import sleep
 ```
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Modifiez la ligne `from gpiozero import ...` pour remplacer `LED` par `TrafficLights`:
 
@@ -29,4 +29,4 @@ while True:
     bouton.wait_for_press()
 ```
 
-\---tâche\---
+\--- /task \---
