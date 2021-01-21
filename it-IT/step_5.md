@@ -2,19 +2,20 @@
 
 Oltre a poter controllare le luci tutte allo stesso tempo, puoi anche controllare ciascun LED individualmente. Con i LED del semaforo, un pulsante e un cicalino, puoi creare la tua sequenza, completa di un passaggio pedonale!
 
-\--- task \---
+Prova altre sequenze a tuo piacimento.
 
-Modify your loop to perform an automated sequence of LEDs being lit:
+Modifica il ciclo in modo da accendere automaticamente i LED:
 
 ```python
+```python
 while True:
-    lights.green.on()
-    sleep(1)
-    lights.amber.on()
-    sleep(1)
-    lights.red.on()
-    sleep(1)
-    lights.off()
+lights.green.on()
+sleep(1)
+lights.amber.on()
+sleep(1)
+lights.red.on()
+sleep(1)
+lights.off()
 ```
 
 \--- /task \---
@@ -24,6 +25,9 @@ while True:
 Add a `wait_for_press()` so that pressing the button initiates the sequence:
 
 ```python
+Aggiungi un `wait_for_press()` in modo tale che la sequenza venga avviata alla pressione del pulsante:
+
+    ```python
 while True:
     button.wait_for_press()
     lights.green.on()
@@ -41,27 +45,27 @@ Try some more sequences of your own.
 
 \--- task \---
 
-Now try creating the full traffic lights sequence:
+Ora prova a creare la sequenza completa dei semafori:
 
-- Green on
-- Amber on
-- Red on
-- Red and amber on
-- Green on
+- Verde acceso
+- Giallo acceso
+- Rosso acceso
+- Rosso e giallo accesi
+- Verde acceso
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
-
-\--- /task \---
-
-\--- task \---
-
-Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+Assicurati di accendere e spegnere le luci corrette al momento giusto, e assicurati di usare `sleep` per sincronizzare perfettamente la sequenza.
 
 \--- /task \---
 
 \--- task \---
 
-Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+Prova ad aggiungere il pulsante per simulare un passaggio pedonale. Il pulsante dovrebbe spostare far diventare rosso il semaforo (non immediatamente) e dare ai pedoni il tempo di attraversare prima di far diventare di nuovo verde e finché il pulsante non viene premuto nuovamente.
+
+\--- /task \---
+
+\--- task \---
+
+Ora prova ad aggiungere un cicalino per emettere un segnale acustico per segnalare che è sicuro attraversare la strada, a beneficio dei pedoni ipovedenti.
 
 ```python
 buzzer = Buzzer(15)
