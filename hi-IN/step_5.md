@@ -1,10 +1,10 @@
 ## ट्रैफिक लाइट अनुक्रम
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+साथ ही रोशनी के पूरे सेट को एक साथ नियंत्रित करने के साथ-साथ, आप प्रत्येक एलईडी को व्यक्तिगत रूप से नियंत्रित कर सकते हैं ट्रैफिक लाइट, एक बटन, और बजर के साथ, आप ट्रैफिक लाइट अनुक्रम बना सकते हैं, पैदल यात्री क्रॉसिंग के साथ पूरा करें!
 
 \--- task \---
 
-Modify your loop to perform an automated sequence of LEDs being lit:
+अपने लूप को सुधरे ताकि वो खुद वा खुद काम करे एलईडी को जलने का:
 
 ```python
 while True:
@@ -21,7 +21,7 @@ while True:
 
 \--- task \---
 
-Add a `wait_for_press()` so that pressing the button initiates the sequence:
+`wait_for_press()` को जोड़े ताकि बटन दबाने के बाद अनुक्रम के अनुसार बदले:
 
 ```python
 while True:
@@ -35,48 +35,47 @@ while True:
     lights.off()
 ```
 
-Try some more sequences of your own.
+आप खुद और अनुक्रम डालने का प्रयत्न करे ।
 
 \--- /task \---
 
 \--- task \---
 
-Now try creating the full traffic lights sequence:
+अब पूर्ण ट्रैफिक लाइट अनुक्रम बनाने का प्रयास करें:
 
 - हरा चालू (Green on)
-- पीला चालू (Amber on)
+- पीली चालू (Amber on)
 - लाल चालू (Red on)
-- लाल और पीला चालू (Red and amber on)
-- हरा चालू (Green on)
+- लाल और पीली चालू (Red and amber on)
+- हरी चालू (Green on)
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+सही समय पर सही लाइट चालू और बंद करना सुनिश्चित करें, और सुनिश्चित करें कि आप अनुक्रम पूरी तरह से समय पर ` light </ 0> का उपयोग करते हैं।</p>
 
-\--- /task \---
+<p>--- /task ---</p>
 
-\--- task \---
+<p>--- task ---</p>
 
-Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+<p>एक पैदल यात्री क्रॉसिंग के लिए बटन जोड़ने का प्रयास करें। बटन को लाइट को लाल रंग में ले जाना चाहिए (तुरंत नहीं), और बटन को फिर से दबाए जाने तक लाइट को वापस हरे रंग में हट जाने से पहले पैदल चलने वालों को समय दें।</p>
 
-\--- /task \---
+<p>--- /task ---</p>
 
-\--- task \---
+<p>--- task ---</p>
 
-Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+<p>अब आप बूज़र को जोड़ो जो बताइए गा की अब रास्ता जाने के लिए सुरक्षित है, जो बहुत फायदेमंद होगा नेत्रहीन लोगो के लिए:</p>
 
-```python
-buzzer = Buzzer(15)
+<pre><code class="python">buzzer = Buzzer(15)
 
 buzzer.on()
 buzzer.off()
 buzzer.beep(0.1, 0.1)
-```
+`</pre> 
 
 \--- /task \---
 
-Your final interactive traffic lights code should start on a green light and then:
+आप का आखिरी इंटरैक्टिव ट्रैफिक लाइट कोड हरा लाइट से शुरू होगा और फिर:
 
-- Wait for the button to be pressed
-- When pressed, change to red/amber, then green
-- Beep for a while to say it's time to cross
-- Go to amber and then green
-- Repeat
+- बटन दबाए जाने की प्रतीक्षा करें
+- जब दबाया जाता है, तो लाल / एम्बर में बदल जाता है, फिर हरा
+- थोड़ी देर के लिए बीप होगी जो संकेत देगा की अब रास्ता को क्रॉस करने समय है
+- एम्बर में जाओ और फिर हरे में
+- दोबारा करो
