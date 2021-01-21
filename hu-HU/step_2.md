@@ -1,24 +1,24 @@
-## Kösd össze a komponenseket
+## Connect the components
 
 \--- task \---
 
 - Raspberry Pi
-- 3 LED és ellenállás
-- Gomb
-- Berregő
-- Próbapanel
-- Áthidaló vezetékek
+- 3x LEDs and resistors
+- Button
+- Buzzer
+- Breadboard
+- Jumper wires
 
-Kösd össze a komponenseket az alábbi GPIO tűkkel:
+Wire up your components to the following GPIO pins:
 
-| Komponens | GPIO tű |
+| Component | GPIO tű |
 | --------- |:-------:|
-| Gomb      |   21    |
-| Piros LED |   25    |
-| Sárga LED |   28    |
-| Zöld LED  |   27    |
-| Berregő   |   15    |
+| Button    |   21    |
+| Red LED   |   25    |
+| Amber LED |   28    |
+| Green LED |   27    |
+| Buzzer    |   15    |
 
-![összekötési ábra](images/wiring.png)
+![wiring diagram](images/wiring.png)
 
 \--- /task \---
