@@ -1,6 +1,6 @@
 ## ट्रैफिक लाइट अनुक्रम
 
-साथ ही रोशनी के पूरे सेट को एक साथ नियंत्रित करने के साथ-साथ, आप प्रत्येक एलईडी को व्यक्तिगत रूप से नियंत्रित कर सकते हैं ट्रैफिक लाइट, एक बटन, और बजर के साथ, आप ट्रैफिक लाइट अनुक्रम बना सकते हैं, पैदल यात्री क्रॉसिंग के साथ पूरा करें!
+As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
 
 \--- task \---
 
@@ -44,10 +44,10 @@ Try some more sequences of your own.
 Now try creating the full traffic lights sequence:
 
 - हरा चालू (Green on)
-- पीली चालू (Amber on)
+- पीला चालू (Amber on)
 - लाल चालू (Red on)
-- लाल और पीली चालू (Red and amber on)
-- हरी चालू (Green on)
+- लाल और पीला चालू (Red and amber on)
+- हरा चालू (Green on)
 
 Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
 
