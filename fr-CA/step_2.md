@@ -1,6 +1,6 @@
-## Connect the components
+## Ce dont vous aurez besoin
 
-\--- task \---
+Connectez vos composants aux broches GPIO suivantes:
 
 - Raspberry Pi
 - 3x DELs et résistances
@@ -13,12 +13,12 @@ Wire up your components to the following GPIO pins:
 
 | Composant          | Broche GPIO |
 | ------------------ |:-----------:|
-| Bouton             |     21      |
+| Bouton             |     24      |
 | DEL rouge          |     25      |
-| DEL jaune          |     28      |
-| DEL verte          |     27      |
-| Avertisseur sonore |     15      |
+| DEL jaune          |     23      |
+| DEL verte          |     22      |
+| Avertisseur sonore |      5      |
 
 ![wiring diagram](images/wiring.png)
 
-\--- /task \---
+\---tâche\---
