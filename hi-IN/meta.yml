@@ -1,7 +1,7 @@
 ---
-title: Interactive Traffic Lights with Python
+title: पायथन के साथ इंटरएक्टिव (एक दूसरे को प्रभावित करने वाला) ट्रैफिक लाइट
 hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
+description: पायथन के साथ एक इंटरैक्टिव ट्रैफिक लाइट क्रम के अनुसार प्रोग्राम करने के लिए एलईडी, एक बटन और बजर का उपयोग करें |
 listed: false
 copyedit: false
 version: 4.1
@@ -10,10 +10,10 @@ steps:
   - 
     title: भूमिका
   - 
-    title: Connect the components
+    title: पुरज़ो को जोड़े
   - 
-    title: Control the LEDs and button
+    title: एल ई डी और बटन को नियंत्रित करें
   - 
-    title: Traffic lights
+    title: यातायात बत्तिया
   - 
-    title: Traffic lights sequence
+    title: ट्रैफिक लाइट अनुक्रम
