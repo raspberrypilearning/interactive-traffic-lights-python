@@ -1,26 +1,18 @@
-## Control the LEDs and button
+## GPIOコンポーネント
 
 \--- task \---
 
-Open **Mu** from the main menu.
+メインメニューから**Mu**を開きます。
 
 \--- /task \---
 
 \--- task \---
 
-Enter the following code:
+以下のコードを入力します。
 
 ```python
-from gpiozero import LED, Button
-
-red = LED(25)
-button = Button(21)
-
-while True:
-    if button.is_pressed:
-        red.on()
-    else:
-        red.off()
+```python
+gpiozeroインポートLEDから、ボタンled = LED（22）ボタン=ボタン（25）Trueの場合：button.is_pressed：led.on（）else：led.off（）
 ```
 
 \--- /task \---
@@ -49,24 +41,16 @@ button = Button(21)
 
 \--- task \---
 
-Get them to come on when the button is pressed:
+ボタンが押されたときにそれらが来るようにする：
 
 ```python
-while True:
-    if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
-    else:
-        green.off()
-        amber.off()
-        red.off()
+while：button.is_pressed：green.on（）amber.on（）red.on（）else：green.off（）amber.off（）red.off（）
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Run the code and press the button.
+コードを実行し、ボタンを押します。
 
 \--- /task \---
