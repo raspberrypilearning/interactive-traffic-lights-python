@@ -1,32 +1,27 @@
-## Semaforo
+## Semafori
 
-You can use the built-in `TrafficLights` class instead of three individual LEDs.
+È possibile utilizzare l'interfaccia `TrafficLights` al posto dei tre LED.
 
-\--- task \---
+button = Button(25) lights = TrafficLights(24, 23, 22)
 
-Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+while True: button.wait_for_press() lights.on() button.wait_for_release() lights.off()
 
+```python
 ```python
 from gpiozero import TrafficLights, Button
 from time import sleep
-
-button = Button(21)
-lights = TrafficLights(25, 28, 27)
-
-while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Try changing the lights to `blink`:
+Modifica la riga `from gpiozero import...` sostituiendo `LED` con `TrafficLights`:
 
 ```python
+Prova a modificare il comportamento delle luci con `blink`:
+
+    ```python
 while True:
     lights.blink()
     button.wait_for_press()
