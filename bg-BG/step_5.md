@@ -1,6 +1,6 @@
 ## Последователност на светофарите
 
-Освен контрола на целия комплект светлини заедно, можете също да контролирате всеки светодиод индивидуално. С светодиодите със светофар, бутон и зумер можете да създадете собствена последователност на светофара, допълнена с пешеходна пътека!
+As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
 
 \--- task \---
 
@@ -43,11 +43,11 @@ Try some more sequences of your own.
 
 Now try creating the full traffic lights sequence:
 
-- Green on
-- Amber on
-- Red on
-- Red and amber on
-- Green on
+- Зелено на
+- Амбър на
+- Червено включено
+- Червено и кехлибарено
+- Зелено на
 
 Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
 
