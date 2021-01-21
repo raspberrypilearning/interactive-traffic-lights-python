@@ -2,7 +2,7 @@
 
 Utilisez des DELs, un bouton et un avertisseur sonore pour programmer une séquence de feux de circulation complète avec Python
 
-Effondrement
+\--- collapse \---
 
 * * *
 
@@ -23,9 +23,9 @@ You'll need to install Mu. Open a Terminal window and type the following command
 sudo apt install mu-editor
 ```
 
-Effondrement
+\--- /collapse \---
 
-Effondrement
+\--- collapse \---
 
 * * *
 
@@ -34,9 +34,9 @@ Effondrement
 - Controlling your Raspberry Pi's GPIO pins using Python
 - Using LEDs, a button and a buzzer with your Raspberry Pi
 
-Effondrement
+\--- /collapse \---
 
-Effondrement
+\--- collapse \---
 
 * * *
 
@@ -48,4 +48,4 @@ If you need to print this project, a [PDF version](https://github.com/raspberryp
 
 \--- /no-print \---
 
-Effondrement
+\--- /collapse \---
