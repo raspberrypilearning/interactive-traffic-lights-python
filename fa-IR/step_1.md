@@ -42,10 +42,10 @@ sudo apt install mu-editor
 
 ## title: Information for Jam organisers
 
-\--- بدون چاپ \---
+\--- no-print \---
 
 If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
 
-\--- /بدون چاپ \---
+\--- /no-print \---
 
 \--- /collapse \---
