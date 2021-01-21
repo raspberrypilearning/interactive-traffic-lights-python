@@ -6,7 +6,7 @@ Use LEDs, a button and a buzzer to program an interactive traffic lights sequenc
 
 * * *
 
-## title: What you will need
+## title: Какво ще ви трябва
 
 - Raspberry Pi computer
 - Components: 
@@ -17,7 +17,7 @@ Use LEDs, a button and a buzzer to program an interactive traffic lights sequenc
   - Jumper wires
 - Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
-You'll need to install Mu. Open a Terminal window and type the following command:
+Вие ще трябва да инсталирате Mu. Отворете терминален прозорец и напишете следната команда:
 
 ```bash
 sudo apt install mu-editor
@@ -29,9 +29,9 @@ sudo apt install mu-editor
 
 * * *
 
-## title: What you will learn
+## title: Какво ще научите
 
-- Controlling your Raspberry Pi's GPIO pins using Python
+- Контролиране на GPIO пиновете на вашия Raspberry Pi използвайки Python
 - Using LEDs, a button and a buzzer with your Raspberry Pi
 
 \--- /collapse \---
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Information for Jam organisers
+## title: Информация за Jam организатори
 
 \--- no-print \---
 
-If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
+If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Моля обърнете внимание на бележките преди принтиране на страницата.
 
 \--- /no-print \---
 
