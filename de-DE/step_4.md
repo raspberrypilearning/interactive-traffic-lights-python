@@ -1,37 +1,32 @@
 ## Verkehrsampel
 
-You can use the built-in `TrafficLights` class instead of three individual LEDs.
+Du kannst die eingebaute `TrafficLights`-Schnittstelle statt drei LEDs verwenden.
 
-\--- task \---
+taster = Button(25) lampen = TrafficLights(24, 23, 22)
 
-Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+while True: taster.wait_for_press() lampen.on() taster.wait_for_release() lampen.off()
 
+```python
 ```python
 from gpiozero import TrafficLights, Button
 from time import sleep
-
-button = Button(21)
-lights = TrafficLights(25, 28, 27)
-
-while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Try changing the lights to `blink`:
+Ändere die `from gpiozero import...`-Anweisung und ersetze `LED` mit `TrafficLights`:
 
 ```python
+Versuche den Befehl für die Lampen auf `blink` zu ändern:
+
+    ```python
 while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+    lampen.blink()
+    taster.wait_for_press()
+    lampen.off()
+    taster.wait_for_release()
 ```
 
 \--- /task \---
