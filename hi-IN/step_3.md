@@ -1,4 +1,4 @@
-## Control the LEDs and button
+## एल ई डी और बटन को नियंत्रित करें
 
 \--- task \---
 
@@ -27,29 +27,28 @@ while True:
 
 \--- task \---
 
-Run your code with `F5`. Now when you press the button, the green LED will come on.
+अपना कोड ` F5 </ 0> के साथ चलाएं। अब जब आप बटन दबाएंगे, तो हरे रंग की एलईडी आएगी।</p>
 
-\--- /task \---
+<p>--- /task ---</p>
 
-\--- task \---
+<p>--- task ---</p>
 
-Try creating three LEDs:
+<p>तीन एलईडी के साथ अब कोशिश करें:</p>
 
-```python
-from gpiozero import LED, Button
+<pre><code class="python">from gpiozero import LED, Button
 
 red = LED(25)
 amber = LED(28)
 green = LED(27)
 
 button = Button(21)
-```
+`</pre> 
 
 \--- /task \---
 
 \--- task \---
 
-Get them to come on when the button is pressed:
+बटन दबाए जाने पर उन एल ई डी को ऑन करे:
 
 ```python
 while True:
@@ -67,6 +66,6 @@ while True:
 
 \--- task \---
 
-Run the code and press the button.
+कोड चलाएं और फिर बटन दबाएं।
 
 \--- /task \---
