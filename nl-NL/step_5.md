@@ -1,4 +1,4 @@
-## Verkeerslichten volgorde
+## Volgorde verkeerslichten
 
 Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk bedienen. Met LEDs, een drukknop en een zoemer kan je jouw eigen verkeerslicht maken, compleet met oversteekplaats voor voetgangers !
 
@@ -39,27 +39,27 @@ Probeer je eigen reeks te maken.
 
 \--- /task \---
 
-\--- task \---
+\--- task \----
 
 Probeer nu de volledige reeks voor een verkeerslicht te maken:
 
-- Rood uit en groen aan
+- Rood uit, groen aan
 - Groen uit, oranje aan
 - Oranje uit, rood aan
-- 
-- Rood uit en groen aan
+- Rood en oranje aan
+- Groen aan
 
 Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat je steeds de juiste `sleep` periode gebruikt om de volgorde perfect te timen.
 
-\--- /task \---
+-- /task \---
 
-\--- task \---
+\--- task \----
 
 Probeer de knop voor een zebrapad toe te voegen. De knop moet de lichten (niet onmiddellijk) op rood zetten en de voetgangers de tijd geven om over te steken voordat de lichten weer groen worden totdat de knop opnieuw wordt ingedrukt.
 
 \--- /task \---
 
-\--- task \---
+\--- taak \---
 
 Laat nu ten behoeve van visueel gehandicapte voetgangers een zoemer snel piepen om aan te geven dat het veilig is om over te steken:
 
