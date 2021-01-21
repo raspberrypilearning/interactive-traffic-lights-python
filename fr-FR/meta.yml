@@ -1,19 +1,19 @@
 ---
-title: Feux de circulation interactifs avec Python
+title: Interactive Traffic Lights with Python
 hero_image: images/banner.png
-description: Utilise des LED, un bouton et un buzzer pour programmer une séquence interactive de feux de signalisation avec Python
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
 listed: false
 copyedit: false
-version: 4.1
-last_tested: 2018-11-21
+version: 4
+last_tested: 2017-01-01
 steps:
   - 
     title: Introduction
   - 
-    title: Connecter les composants
+    title: Connect the components
   - 
-    title: Contrôler les LED et le bouton
+    title: Control the LEDs and button
   - 
-    title: Feux de circulation
+    title: Traffic lights
   - 
-    title: Séquence de feux de circulation
+    title: Traffic lights sequence
