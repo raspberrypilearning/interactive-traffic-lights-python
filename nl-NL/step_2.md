@@ -1,4 +1,4 @@
-## Verbind de componenten
+## Wat heb je nodig
 
 \--- task \---
 
@@ -9,7 +9,7 @@
 - Experimenteer bord
 - Verbindingsdraden
 
-Sluit uw componenten aan op de volgende GPIO-pinnen:
+Sluit je componenten aan op de volgende GPIO-pinnen:
 
 | Component  | GPIO-pin |
 | ---------- |:--------:|
