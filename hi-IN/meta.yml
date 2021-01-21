@@ -14,6 +14,6 @@ steps:
   - 
     title: Control the LEDs and button
   - 
-    title: यातायात बत्तिया
+    title: Traffic lights
   - 
-    title: ट्रैफिक लाइट अनुक्रम
+    title: Traffic lights sequence
