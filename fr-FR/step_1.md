@@ -1,23 +1,23 @@
 ## Introduction
 
-Utilise des LED, un bouton et un buzzer pour programmer une séquence interactive de feux de signalisation avec Python.
+Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python.
 
 \--- collapse \---
 
 * * *
 
-## title: Ce qu'il te faut
+## title: What you will need
 
-- Un ordinateur Raspberry Pi
-- Composants : 
-  - 3x LEDs et résistances
-  - Bouton
+- Raspberry Pi computer
+- Components: 
+  - 3x LEDs and resistors
+  - Button
   - Buzzer
-  - Plaquette d'expérimentation (breadboard)
-  - Fils de connexion
-- Tu peux également utiliser un Traffic HAT (ou un pi-stop au lieu des voyants) et utiliser des numéros d'identification différents
+  - Breadboard
+  - Jumper wires
+- Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
-Il faudra installer Mu. Ouvre la fenêtre du Terminal et tape la commande suivante :
+You'll need to install Mu. Open a Terminal window and type the following command:
 
 ```bash
 sudo apt install mu-editor
@@ -29,10 +29,10 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Ce que tu vas apprendre
+## title: What you will learn
 
-- Contrôler les GPIO de ton Raspberry Pi en utilisant Python
-- Utiliser des LEDs, un bouton et un buzzer avec ton Raspberry Pi
+- Controlling your Raspberry Pi's GPIO pins using Python
+- Using LEDs, a button and a buzzer with your Raspberry Pi
 
 \--- /collapse \---
 
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Informations pour les organisateurs de Jam
+## title: Information for Jam organisers
 
 \--- no-print \---
 
-S'il tu as besoin d'imprimer ce projet, une [version PDF](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) est disponible. Merci de considérer toutes les notes de cette page avant d'imprimer.
+If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
 
 \--- /no-print \---
 
