@@ -4,9 +4,9 @@ led = LED(22) bouton = Button(25)
 
 while True: if bouton.is_pressed: led.on() else: led.off()
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Entrez le code suivant:
 
@@ -15,15 +15,15 @@ Entrez le code suivant:
 from gpiozero import LED, Button
 ```
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Exécutez votre code avec la touche `F5` . Maintenant, lorsque vous appuyez sur le bouton, la DEL verte s'allume.
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Try creating three LEDs:
 
@@ -40,9 +40,9 @@ vert = LED(22)
 bouton = Button(25)
 ```
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Faites les allumer lorsque le bouton est pressé:
 
@@ -58,10 +58,10 @@ else:
     rouge.off()
 ```
 
-\---tâche\---
+\--- /task \---
 
-\---tâche\---
+\--- task \---
 
 Exécutez le code et appuyez sur le bouton.
 
-\---tâche\---
+\--- /task \---
