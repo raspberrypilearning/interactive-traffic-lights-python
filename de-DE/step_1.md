@@ -1,6 +1,6 @@
-## Einleitung
+## Einführung
 
-Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python.
+Verwende LEDs, eine Taste und einen Summer, um einen vollständigen Ampel-Ablauf mit Python zu programmieren
 
 \--- collapse \---
 
