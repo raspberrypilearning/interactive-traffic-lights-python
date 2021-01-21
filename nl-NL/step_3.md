@@ -1,4 +1,4 @@
-## GPIO-componenten
+## Bedien de LED's en de knop
 
 \--- task \---
 
