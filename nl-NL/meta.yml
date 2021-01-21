@@ -4,11 +4,11 @@ hero_image: images/banner.png
 description: Gebruik LED's, een knop en een zoemer om een ​​volledige reeks verkeerslichten met Python te programmeren
 listed: false
 copyedit: false
-version: 4
+version: 4.1
 last_tested: 2018-11-21
 steps:
   - 
-    title: Introductie
+    title: Inleiding
   - 
     title: Verbind de componenten
   - 
