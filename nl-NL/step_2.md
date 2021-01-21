@@ -1,4 +1,4 @@
-## Wat heb je nodig
+## Verbind de componenten
 
 \--- task \---
 
