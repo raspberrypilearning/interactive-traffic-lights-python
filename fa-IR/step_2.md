@@ -2,22 +2,22 @@
 
 \--- task \---
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
-- Breadboard
-- Jumper wires
+- رزبری پای
+- سه عدد LED و تعدادی مقاومت
+- دکمه
+- زنگ هشدار
+- بردبورد
+- سیم‌های اتصال
 
 Wire up your components to the following GPIO pins:
 
-| Component | پایه GPIO |
+| قطعه      | پایه GPIO |
 | --------- |:---------:|
-| Button    |    21     |
-| Red LED   |    25     |
-| Amber LED |    28     |
-| Green LED |    27     |
-| Buzzer    |    15     |
+| دکمه      |    21     |
+| LED قرمز  |    25     |
+| LED زرد   |    28     |
+| LED سبز   |    27     |
+| زنگ هشدار |    15     |
 
 ![wiring diagram](images/wiring.png)
 
