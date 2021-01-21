@@ -14,6 +14,6 @@ steps:
   - 
     title: Control the LEDs and button
   - 
-    title: Светофар
+    title: Traffic lights
   - 
-    title: Последователност на светофарите
+    title: Traffic lights sequence
