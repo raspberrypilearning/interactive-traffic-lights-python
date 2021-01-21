@@ -1,6 +1,6 @@
 ## ترتیب چراغ راهنمایی
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+ضمن کنترل تمام مجموعه‌ی چراغ ها، می‌توانید هر LED را به صورت جداگانه کنترل کنید. با LED های چراغ راهنمایی، یک دکمه و زنگ، شما می توانید دنباله چراغ راهنمای خود را ایجاد کنید، با افزودن امکان عبور عابر پیاده، آن را کامل نمایید!
 
 \--- task \---
 
@@ -43,11 +43,11 @@ Try some more sequences of your own.
 
 Now try creating the full traffic lights sequence:
 
-- سبز روشن
-- زرد روشن
-- قرمز روشن
-- قرمز و زرد روشن
-- سبز روشن
+- Green on
+- Amber on
+- Red on
+- Red and amber on
+- Green on
 
 Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
 
