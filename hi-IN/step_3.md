@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Open **Mu** from the main menu.
+मुख्य मेनू से **Mu** खोलें।
 
 \--- /task \---
 
