@@ -1,4 +1,4 @@
-## यातायात बत्तिया
+## Traffic lights
 
 You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
