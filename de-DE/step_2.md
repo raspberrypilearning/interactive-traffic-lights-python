@@ -1,6 +1,6 @@
-## Connect the components
+## Was du brauchen wirst
 
-\--- task \---
+Verdrahte deine Komponenten mit den folgenden GPIO-Pins:
 
 - Raspberry Pi
 - 3x LEDs und Widerstände
@@ -13,11 +13,11 @@ Wire up your components to the following GPIO pins:
 
 | Komponente | GPIO-Stift |
 | ---------- |:----------:|
-| Taster     |     21     |
+| Taster     |     24     |
 | Rote LED   |     25     |
-| Gelbe LED  |     28     |
-| Grüne LED  |     27     |
-| Summer     |     15     |
+| Gelbe LED  |     23     |
+| Grüne LED  |     22     |
+| Summer     |     5      |
 
 ![wiring diagram](images/wiring.png)
 
