@@ -1,7 +1,7 @@
 ---
-title: Interaktív közlekedési lámpa Pythonban
+title: Interactive Traffic Lights with Python
 hero_image: images/banner.png
-description: LED-ek, egy gomb és egy berregő segítségével programozz egy interaktív közlekedési lámpát Pythonban
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
 listed: false
 copyedit: false
 version: 4.1
@@ -10,10 +10,10 @@ steps:
   - 
     title: Bevezetés
   - 
-    title: Kösd össze a komponenseket
+    title: Connect the components
   - 
-    title: Vezéreld a LED-eket és a gombot
+    title: Control the LEDs and button
   - 
-    title: Közlekedési lámpa
+    title: Traffic lights
   - 
-    title: A közlekedési lámpa ciklusa
+    title: Traffic lights sequence
