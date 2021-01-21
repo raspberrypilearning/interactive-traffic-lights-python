@@ -21,4 +21,4 @@ Wire up your components to the following GPIO pins:
 
 ![wiring diagram](images/wiring.png)
 
-\---tâche\---
+\--- /task \---
