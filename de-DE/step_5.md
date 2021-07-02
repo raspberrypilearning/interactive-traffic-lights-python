@@ -1,4 +1,4 @@
-## Verkehrsampel Sequenz
+## Verkehrsampel-Ablauf
 
 Du kannst nicht nur die gesamte Lampengruppe steuern, sondern auch jede LED einzeln. Mit Ampel-LEDs, einem Taster und einem Summer kannst du deinen eigenen Ampel-Ablauf mit Fußgängerübergang erstellen!
 
