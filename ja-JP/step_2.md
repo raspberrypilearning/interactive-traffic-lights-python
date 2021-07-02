@@ -1,23 +1,23 @@
 ## あなたが必要とするもの
 
-\--- task \---
+コンポーネントを次のGPIOピンに配線します。
 
 - ラズベリーパイ
-- 3x LEDおよび抵抗
+- 3x LEDと抵抗器
 - ボタン
 - ブザー
 - ブレッドボード
-- ジャンパ線
+- ジャンパー線
 
 Wire up your components to the following GPIO pins:
 
-| 成分      | GPIOピン |
-| ------- |:------:|
-| ボタン     |   24   |
-| 赤色LED   |   25   |
-| 琥珀LED   |   23   |
-| グリーンLED |   22   |
-| ブザー     |   5    |
+| 部品     | GPIOピン |
+| ------ |:------:|
+| ボタン    |   24   |
+| 赤色LED  |   25   |
+| 琥珀色LED |   23   |
+| 緑色LED  |   22   |
+| ブザー    |   5    |
 
 ![wiring diagram](images/wiring.png)
 
