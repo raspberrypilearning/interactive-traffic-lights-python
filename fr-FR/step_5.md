@@ -1,67 +1,67 @@
-## Séquence de feux de signalisation
+## Séquence de feux de circulation
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+En plus de contrôler l'ensemble des lumières, tu peux également contrôler chaque LED individuellement. Avec des voyants lumineux, un bouton et un buzzer, tu peux créer ta propre séquence de feux de circulation, avec un passage pour piétons !
 
 \--- task \---
 
-Modify your loop to perform an automated sequence of LEDs being lit:
+Modifie ta boucle pour exécuter une séquence automatisée d'allumage des LEDs:
 
 ```python
 while True:
-    lights.green.on()
+    lumieres.vert.on()
     sleep(1)
-    lights.amber.on()
+    lumieres.orange.on()
     sleep(1)
-    lights.red.on()
+    lumieres.rouge.on()
     sleep(1)
-    lights.off()
+    lumieres.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Add a `wait_for_press()` so that pressing the button initiates the sequence:
+Ajoute un `wait_for_press()` de sorte que le fait d'appuyer sur le bouton lance la séquence:
 
 ```python
 while True:
-    button.wait_for_press()
-    lights.green.on()
+    bouton.wait_for_press()
+    lumieres.vert.on()
     sleep(1)
-    lights.amber.on()
+    lumieres.orange.on()
     sleep(1)
-    lights.red.on()
+    lumieres.rouge.on()
     sleep(1)
-    lights.off()
+    lumieres.off()
 ```
 
-Try some more sequences of your own.
+Essaie plus de séquences de ton choix.
 
 \--- /task \---
 
 \--- task \---
 
-Now try creating the full traffic lights sequence:
+Maintenant essaie de faire la séquence complète que l'on trouve au Royaume-Uni pour les feux de signalisations:
 
 - Vert allumé
-- Ambre allumé
+- Orange allumé
 - Rouge allumé
-- Rouge et ambre allumés
+- Rouge et orange allumé
 - Vert allumé
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+Assure-toi d'allumer et d'éteindre la bonne lumière au bon moment, et vérifie que tu utilises `sleep` pour que la séquence soit parfaitement synchronisée.
 
 \--- /task \---
 
 \--- task \---
 
-Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+Essaie d'ajouter le bouton pour le passage piéton. Le bouton devra changer de couleur et passer au rouge (pas immédiatement), et laisser aux piétons le temps de traverser avant que le feux vert ne soit redonné jusqu'à ce que le bouton soit à nouveau actionné.
 
 \--- /task \---
 
 \--- task \---
 
-Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+Maintenant essaie d'implémenter un bref bip via le buzzer pour indiquer aux piétons malvoyants que l'on peut traverser sans danger :
 
 ```python
 buzzer = Buzzer(15)
@@ -73,10 +73,10 @@ buzzer.beep(0.1, 0.1)
 
 \--- /task \---
 
-Your final interactive traffic lights code should start on a green light and then:
+Ton code de feux de signalisation interactif doit commencer par un feu vert puis :
 
-- Wait for the button to be pressed
-- When pressed, change to red/amber, then green
-- Beep for a while to say it's time to cross
-- Go to amber and then green
-- Repeat
+- Attendre que le bouton soit appuyé
+- Quand il est appuyé, change le feu en orange puis rouge
+- Fais biper pendant un moment pour signaler qu'il est temps de traverser
+- Passer au rouge et orange puis au vert
+- Répéter
