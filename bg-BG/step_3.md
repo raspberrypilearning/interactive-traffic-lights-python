@@ -2,13 +2,13 @@
 
 \--- task \---
 
-Отворете **Mu** от главното меню.
+Open **Mu** from the main menu.
 
 \--- /task \---
 
 \--- task \---
 
-Въведете следния код:
+Enter the following code:
 
 ```python
 from gpiozero import LED, Button
