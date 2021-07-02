@@ -1,37 +1,37 @@
-## Traffic lights
+## Közlekedési lámpa
 
-You can use the built-in `TrafficLights` class instead of three individual LEDs.
+Használhatod a beépített `TrafficLights` osztályt a három különálló LED helyett.
 
 \--- task \---
 
-Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
+Írd át a `from gpiozero import...` sort, cseréld ki a `LED`-et `TrafficLights`-ra:
 
 ```python
 from gpiozero import TrafficLights, Button
 from time import sleep
 
-button = Button(21)
-lights = TrafficLights(25, 28, 27)
+gomb = Button(21)
+lampak = TrafficLights(25, 28, 27)
 
 while True:
-    button.wait_for_press()
-    lights.on()
-    button.wait_for_release()
-    lights.off()
+    gomb.wait_for_press()
+    lampak.on()
+    gomb.wait_for_release()
+    lampak.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Try changing the lights to `blink`:
+Próbáld meg megváltoztatni a lámpákat, hogy `villogjanak`:
 
 ```python
 while True:
-    lights.blink()
-    button.wait_for_press()
-    lights.off()
-    button.wait_for_release()
+    lampak.blink()
+    gomb.wait_for_press()
+    lampak.off()
+    gomb.wait_for_release()
 ```
 
 \--- /task \---
