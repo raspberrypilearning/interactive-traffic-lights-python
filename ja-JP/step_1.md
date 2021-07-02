@@ -6,9 +6,9 @@ LED、ボタン、ブザーを使用して、Pythonで全交通信号のシー�
 
 * * *
 
-## title: 必要なもの
+## title: What you will need
 
-- Raspberry Pi コンピュータ
+- Raspberry Pi computer
 - Components: 
   - 3x LEDs and resistors
   - Button
@@ -17,7 +17,7 @@ LED、ボタン、ブザーを使用して、Pythonで全交通信号のシー�
   - Jumper wires
 - Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
-Muをインストールする必要があります。 ターミナルウィンドウを開き、次のコマンドをタイプします。
+You'll need to install Mu. Open a Terminal window and type the following command:
 
 ```bash
 sudo apt install mu-editor
@@ -29,9 +29,9 @@ sudo apt install mu-editor
 
 * * *
 
-## title: 学ぶこと
+## title: What you will learn
 
-- Raspberry PiのGPIOピンをPythonでコントロールすること
+- Controlling your Raspberry Pi's GPIO pins using Python
 - Using LEDs, a button and a buzzer with your Raspberry Pi
 
 \--- /collapse \---
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Raspberry Jam 主催者のための情報
+## title: Information for Jam organisers
 
 \--- no-print \---
 
-If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. 印刷する前にこのページにある注意書きをよく読んでください。
+If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
 
 \--- /no-print \---
 
