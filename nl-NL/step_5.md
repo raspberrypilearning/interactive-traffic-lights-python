@@ -1,4 +1,4 @@
-## Volgorde verkeerslichten
+## Verkeerslicht volgorde
 
 Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk bedienen. Met LEDs, een drukknop en een zoemer kan je jouw eigen verkeerslicht maken, compleet met oversteekplaats voor voetgangers !
 
