@@ -2,22 +2,22 @@
 
 \--- task \---
 
-- Raspberry Pi
-- 3x LEDs and resistors
-- Button
-- Buzzer
+- Малина Пи
+- 3x светодиоди и резистори
+- бутон
+- зумер
 - Breadboard
-- Jumper wires
+- Свързващи проводници
 
 Wire up your components to the following GPIO pins:
 
-| Component | GPIO пин |
-| --------- |:--------:|
-| Button    |    21    |
-| Red LED   |    25    |
-| Amber LED |    28    |
-| Green LED |    27    |
-| Buzzer    |    15    |
+| Компонент        | ПИН на GPIO |
+| ---------------- |:-----------:|
+| бутон            |     21      |
+| Червен светодиод |     25      |
+| Амбър LED        |     28      |
+| Зелен светодиод  |     27      |
+| зумер            |     15      |
 
 ![wiring diagram](images/wiring.png)
 
