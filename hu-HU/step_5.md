@@ -1,47 +1,47 @@
 ## A közlekedési lámpa ciklusa
 
-As well as controlling the whole set of lights together, you can also control each LED individually. With traffic light LEDs, a button, and a buzzer, you can create your own traffic lights sequence, complete with pedestrian crossing!
+Az összes lámpa együttes vezérlésén kívül egyenként vezérelheted az egyes LED-eket is. A közlekedési lámpák LED-jei, a gombok és a berregő segítségével létrehozhatod a saját közlekedésilámpa-ciklusodat, beleértve a gyalogos átkelőt is!
 
 \--- task \---
 
-Modify your loop to perform an automated sequence of LEDs being lit:
+Módosítsd a ciklusodat, hogy automatikusan váltogassa az égő LED-eket:
 
 ```python
 while True:
-    lights.green.on()
+    lampak.green.on()
     sleep(1)
-    lights.amber.on()
+    lampak.amber.on()
     sleep(1)
-    lights.red.on()
+    lampak.red.on()
     sleep(1)
-    lights.off()
+    lampak.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Add a `wait_for_press()` so that pressing the button initiates the sequence:
+Adj hozzá egy `wait_for_press()` hívást, hogy a gomb megnyomására induljon a folyamat:
 
 ```python
 while True:
-    button.wait_for_press()
-    lights.green.on()
+    gomb.wait_for_press()
+    lampak.green.on()
     sleep(1)
-    lights.amber.on()
+    lampak.amber.on()
     sleep(1)
-    lights.red.on()
+    lampak.red.on()
     sleep(1)
-    lights.off()
+    lampak.off()
 ```
 
-Try some more sequences of your own.
+Próbálj ki néhány saját ciklust.
 
 \--- /task \---
 
 \--- task \---
 
-Now try creating the full traffic lights sequence:
+Most próbáld meg létrehozni a teljes lámpaciklust:
 
 - Zöld bekapcsol
 - Sárga bekapcsol
@@ -49,34 +49,34 @@ Now try creating the full traffic lights sequence:
 - Piros és sárga bekapcsol
 - Zöld bekapcsol
 
-Be sure to turn the correct lights on and off at the right time, and make sure you use `sleep` to time the sequence perfectly.
+Győződj meg róla, hogy a helyes lámpákat kapcsolod be és ki a megfelelő időpontokban, és a `sleep` hívással időzítsd pontosra a ciklust.
 
 \--- /task \---
 
 \--- task \---
 
-Try adding the button for a pedestrian crossing. The button should move the lights to red (not immediately), and give the pedestrians time to cross before moving the lights back to green until the button is pressed again.
+Próbálj meg hozzáadni egy gombot a gyalogos átkelőhöz. A gomb állítsa a lámpát pirosra (nem azonnal), és adjon időt a gyalogosoknak, hogy átkeljenek, mielőtt a lámpa visszavált zöldre a gomb következő megnyomásáig.
 
 \--- /task \---
 
 \--- task \---
 
-Now try adding a buzzer to beep quickly to indicate that it is safe to cross, for the benefit of visually impaired pedestrians:
+Most próbálj meg hozzáadni egy berregőt, amely gyors hangjelzésekkel jelzi, hogy biztonságosan át lehet kelni, így segítve a látássérült gyalogosokat:
 
 ```python
-buzzer = Buzzer(15)
+berrego = Buzzer(15)
 
-buzzer.on()
-buzzer.off()
-buzzer.beep(0.1, 0.1)
+berrego.on()
+berrego.off()
+berrego.beep(0.1, 0.1)
 ```
 
 \--- /task \---
 
-Your final interactive traffic lights code should start on a green light and then:
+A végső interaktív közlekedésilámpa-kódod a zöld lámpánál kezdődjön, aztán:
 
-- Wait for the button to be pressed
-- When pressed, change to red/amber, then green
-- Beep for a while to say it's time to cross
-- Go to amber and then green
-- Repeat
+- Várja meg, hogy lenyomják a gombot
+- Amikor lenyomták, váltson piros/sárgára, majd zöldre
+- Adjon hangjelzéseket, amíg át lehet kelni
+- Váltson sárgára, majd pirosra
+- Ismételje meg
