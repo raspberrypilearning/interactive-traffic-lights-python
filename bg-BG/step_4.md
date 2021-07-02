@@ -1,4 +1,4 @@
-## Traffic lights
+## Светофар
 
 You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
