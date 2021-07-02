@@ -1,23 +1,23 @@
-## introduzione
+## Introduzione
 
-Usa i LED, un pulsante e un cicalino per programmare la sequenza completa delle luci di un semaforo con Python
+Usa LED, un pulsante e un cicalino per programmare la sequenza completa di un semaforo con Python.
 
 \--- collapse \---
 
 * * *
 
-## title: What you will need
+## title: Di cosa avrai bisogno
 
-- Raspberry Pi computer
-- Components: 
-  - 3x LEDs and resistors
-  - Button
-  - Buzzer
+- Un computer Raspberry Pi
+- Componenti: 
+  - 3x LED e resistenze
+  - Pulsante
+  - Cicalino
   - Breadboard
-  - Jumper wires
-- Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
+  - Ponticelli
+- In alternativa, utilizzare un Traffic HAT (o un pi-stop invece dei LED) e utilizzare numeri di pin diversi
 
-You'll need to install Mu. Open a Terminal window and type the following command:
+Dovrai installare Mu. Apri una finestra Terminale e digita il seguente comando:
 
 ```bash
 sudo apt install mu-editor
@@ -29,10 +29,10 @@ sudo apt install mu-editor
 
 * * *
 
-## title: What you will learn
+## titolo: Cosa imparerai
 
-- Controlling your Raspberry Pi's GPIO pins using Python
-- Using LEDs, a button and a buzzer with your Raspberry Pi
+- Controllare i pin GPIO del tuo Raspberry Pi tramite Python
+- Utilizzare LED, un pulsante e un cicalino con il tuo Raspberry Pi
 
 \--- /collapse \---
 
@@ -40,11 +40,11 @@ sudo apt install mu-editor
 
 * * *
 
-## title: Information for Jam organisers
+## title: Informazioni per gli organizzatori di un Jam
 
 \--- no-print \---
 
-If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Please observe any notes on this page before printing.
+Se vuoi stampare questo progetto, è disponibile una [versione PDF](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf). Per favore, prima di stampare, controlla le note su questa pagina.
 
 \--- /no-print \---
 
