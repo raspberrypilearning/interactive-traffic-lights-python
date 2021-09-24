@@ -45,7 +45,7 @@ groen = LED(27)
 button = Button(21)
 ```
 
--- /task ---
+--- /task ---
 
 --- task ---
 
