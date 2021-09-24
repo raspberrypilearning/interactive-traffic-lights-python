@@ -1,24 +1,24 @@
-## पुरज़ो को जोड़े
+## Connect the components
 
 \--- task \---
 
 - Raspberry Pi
-- 3x एल ई डी और प्रतिरोधों
-- बटन
-- बजर
-- ब्रेडबोर्ड
-- जम्पर तार
+- 3x LEDs and resistors
+- Button
+- Buzzer
+- Breadboard
+- Jumper wires
 
-अपने पुरज़ा को GPIO पिनों के संख्या के अनुसार तारो को जड़ो:
+Wire up your components to the following GPIO pins:
 
-| अंग         | GPIO पिन |
-| ----------- |:--------:|
-| बटन         |    21    |
-| लाल एलईडी   |    25    |
-| एम्बर एलईडी |    28    |
-| ग्रीन एलईडी |    27    |
-| बजर         |    15    |
+| Component | GPIO पिन |
+| --------- |:--------:|
+| Button    |    21    |
+| Red LED   |    25    |
+| Amber LED |    28    |
+| Green LED |    27    |
+| Buzzer    |    15    |
 
-![तारों का रेखाचित्र](images/wiring.png)
+![wiring diagram](images/wiring.png)
 
 \--- /task \---
