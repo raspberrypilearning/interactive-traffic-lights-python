@@ -9,7 +9,7 @@
 - Experimenteer bord
 - Verbindingsdraden
 
-Sluit je componenten aan op de volgende GPIO-pinnen:
+Sluit uw componenten aan op de volgende GPIO-pinnen:
 
 | Component  | GPIO-pin |
 | ---------- |:--------:|
