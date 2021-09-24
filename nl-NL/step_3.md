@@ -4,7 +4,7 @@
 
 Open **Mu** vanuit het hoofdmenu.
 
----/task---
+--- /task ---
 
 --- task ---
 
@@ -47,7 +47,7 @@ button = Button(21)
 
 -- /task ---
 
---- task ----
+--- task ---
 
 Laat ze oplichten als de knop wordt ingedrukt:
 
