@@ -1,6 +1,6 @@
 ## Bevezetés
 
-LED-ek, egy gomb és egy berregő segítségével programozz egy interaktív közlekedési lámpát Pythonban.
+Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python.
 
 \--- collapse \---
 
@@ -9,13 +9,13 @@ LED-ek, egy gomb és egy berregő segítségével programozz egy interaktív kö
 ## title: Amire szükséged lesz
 
 - Raspberry Pi számítógép
-- Komponensek: 
-  - 3 LED és ellenállás
-  - Gomb
-  - Berregő
-  - Próbapanel
-  - Áthidaló vezetékek
-- Ehelyett használhatsz egy Traffic HAT komponenst (vagy egy pi-stop komponenst a LED-ek helyett), és használhatsz más tűszámokat
+- Components: 
+  - 3x LEDs and resistors
+  - Button
+  - Buzzer
+  - Breadboard
+  - Jumper wires
+- Alternatively, use a Traffic HAT (or a pi-stop instead of the LEDs) - and use different pin numbers
 
 Fel kell telepítened a Mu-t. Nyiss meg egy Terminál ablakot, majd írd be az alábbi parancsot:
 
@@ -32,7 +32,7 @@ sudo apt install mu-editor
 ## title: Amit meg fogsz tanulni
 
 - A Raspberry Pi GPIO tűinek vezérlése Pythonban
-- LED-ek, gomb és berregő használata Raspberry Pi-jal
+- Using LEDs, a button and a buzzer with your Raspberry Pi
 
 \--- /collapse \---
 
@@ -44,7 +44,7 @@ sudo apt install mu-editor
 
 \--- no-print \---
 
-Ha ki kell nyomtatnod a projektet, elérhető egy [PDF verzió](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf). Olvass el minden megjegyzést ezen az oldalon a nyomtatás előtt.
+If you need to print this project, a [PDF version](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf) is available. Olvass el minden megjegyzést ezen az oldalon a nyomtatás előtt.
 
 \--- /no-print \---
 
