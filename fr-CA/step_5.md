@@ -1,4 +1,4 @@
-## Séquence de feux de circulation
+## Séquence de feux de signalisation
 
 En plus de contrôler les feux tous ensemble, vous pouvez aussi contrôler les DELs individuellement. Avec des DELs, un bouton et un avertisseur sonore, vous pouvez créer votre propre séquence de feux de circulation complète, avec une traverse de piétons!
 
@@ -47,11 +47,11 @@ Try some more sequences of your own.
 
 Maintenant, essayez de créer la séquence complète des feux de circulation:
 
-- Rouge on
+- Vert allumé
 - Jaune on
-- Vert on
-- Red and amber on
-- Vert on
+- Rouge on
+- Rouge et ambre allumés
+- Vert allumé
 
 Assurez-vous d'allumer et d'éteindre les bons feux au bon moment et assurez-vous d'utiliser `sleep` pour contrôler la durée de chaque étape la séquence.
 
