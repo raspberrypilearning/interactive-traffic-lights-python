@@ -4,7 +4,7 @@
 
 Open **Mu** vanuit het hoofdmenu.
 
---- /task ---
+---/task---
 
 --- task ---
 
@@ -45,9 +45,9 @@ groen = LED(27)
 button = Button(21)
 ```
 
---- /task ---
+-- /task ---
 
---- task ---
+--- task ----
 
 Laat ze oplichten als de knop wordt ingedrukt:
 

@@ -1,4 +1,4 @@
-## Verkeerslicht volgorde
+## Verkeerslichten volgorde
 
 Naast het besturen van alle LED's tegelijkertijd, kan je ze ook elk afzonderlijk bedienen. Met LEDs, een drukknop en een zoemer kan je jouw eigen verkeerslicht maken, compleet met oversteekplaats voor voetgangers !
 
@@ -43,11 +43,11 @@ Probeer je eigen reeks te maken.
 
 Probeer nu de volledige reeks voor een verkeerslicht te maken:
 
-- Rood uit, groen aan
+- Rood uit en groen aan
 - Groen uit, oranje aan
 - Oranje uit, rood aan
-- Rood en oranje aan
-- Groen aan
+- 
+- Rood uit en groen aan
 
 Zorg ervoor dat de juiste lichten op het juiste moment worden in- en uitgeschakeld en zorg ervoor dat je steeds de juiste `sleep` periode gebruikt om de volgorde perfect te timen.
 
@@ -80,13 +80,13 @@ Je laatste interactieve verkeerslichtcode moet beginnen met een groen licht en v
 - Piep een tijdje om te zeggen dat het tijd is om over te steken
 - Ga naar oranje en vervolgens groen
 - Herhaal
-
 ***
 Dit project werd vertaald door vrijwilligers:
 
 Robert-Jan Kempenaar
-Cor Groot
-Bino Maiheu
+Coen Warries
 Sanneke van der Meer
+Cor Groot
+Jeroen Dekker
 
 Dankzij vrijwilligers kunnen we mensen over de hele wereld de kans geven om in hun eigen taal te leren. Jij kunt ons helpen meer mensen te bereiken door vrijwillig te starten met vertalen - meer informatie op [rpf.io/translate](https://rpf.io/translate).
