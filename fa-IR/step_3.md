@@ -8,7 +8,7 @@ Open **Mu** from the main menu.
 
 \--- task \---
 
-Enter the following code:
+کد زیر را وارد کنید:
 
 ```python
 from gpiozero import LED, Button
