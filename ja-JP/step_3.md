@@ -2,13 +2,13 @@
 
 \--- task \---
 
-Open **Mu** from the main menu.
+メインメニューから**Mu**を開きます。
 
 \--- /task \---
 
 \--- task \---
 
-次のコードを入力します。
+以下のコードを入力します。
 
 ```python
 ```python
