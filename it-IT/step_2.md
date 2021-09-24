@@ -1,6 +1,6 @@
-## Collega i componenti
+## Cosa ti serve
 
-\--- task \---
+Collega i componenti ai seguenti pin GPIO:
 
 - Raspberry Pi
 - 3x LED e resistenze
@@ -9,16 +9,16 @@
 - Breadboard
 - Ponticelli
 
-Collega i componenti ai seguenti pin GPIO:
+Wire up your components to the following GPIO pins:
 
 | Componente | Pin GPIO |
 | ---------- |:--------:|
-| Pulsante   |    21    |
+| Pulsante   |    24    |
 | LED rosso  |    25    |
-| LED giallo |    28    |
-| LED verde  |    27    |
-| Cicalino   |    15    |
+| LED ambra  |    23    |
+| LED verde  |    22    |
+| Cicalino   |    5     |
 
-![schema elettrico](images/wiring.png)
+![wiring diagram](images/wiring.png)
 
 \--- /task \---
