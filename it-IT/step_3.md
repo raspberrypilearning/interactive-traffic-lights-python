@@ -1,8 +1,8 @@
-## Controlla i LED ed il pulsante
+## Componenti GPIO
 
-\--- task \---
+led = LED(22) button = Button(25)
 
-Apri **Mu** dal menu principale.
+while True: if button.is_pressed: led.on() else: led.off()
 
 \--- /task \---
 
@@ -11,38 +11,33 @@ Apri **Mu** dal menu principale.
 Inserisci il seguente codice:
 
 ```python
+```python
 from gpiozero import LED, Button
-
-red = LED(25)
-button = Button(21)
-
-while True:
-    if button.is_pressed:
-        red.on()
-    else:
-        red.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Esegui il programma premendo `F5`. Quando premerai il pulsante, il LED rosso si accenderà.
+Esegui il programma con `F5`. Quando premerai il pulsante, il LED verde si accenderà.
 
 \--- /task \---
 
 \--- task \---
 
-Prova a creare tre LED:
+Try creating three LEDs:
 
 ```python
+Prova a creare tre LED:
+
+    ```python
 from gpiozero import LED, Button
 
-red = LED(25)
-amber = LED(28)
-green = LED(27)
+red = LED(24)
+amber = LED(23)
+green = LED(22)
 
-button = Button(21)
+button = Button(25)
 ```
 
 \--- /task \---
@@ -53,14 +48,14 @@ Fai in modo che si accendano quando viene premuto il pulsante:
 
 ```python
 while True:
-    if button.is_pressed:
-        green.on()
-        amber.on()
-        red.on()
-    else:
-        green.off()
-        amber.off()
-        red.off()
+if button.is_pressed:
+    green.on()
+    amber.on()
+    red.on()
+else:
+    green.off()
+    amber.off()
+    red.off()
 ```
 
 \--- /task \---
