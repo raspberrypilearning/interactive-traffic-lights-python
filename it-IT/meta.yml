@@ -1,19 +1,19 @@
 ---
-title: Semaforo interattivo con Python
-hero_image: images/banner.png
-description: Usa i LED, un pulsante e un cicalino per programmare la sequenza delle luci di un semaforo con Python
+title: Controlla una sequenza di semafori interattivi con Python
+hero_image: images / banner.png
+description: Usa LED, un pulsante e un cicalino per programmare una sequenza completa di semafori con Python
 listed: false
 copyedit: false
-version: 4.1
-last_tested: 2018-11-21
+version: 3
+last_tested: 2017-01-01
 steps:
   - 
     title: Introduzione
   - 
-    title: Collega i componenti
+    title: Di cosa avrai bisogno
   - 
-    title: Controlla i LED ed il pulsante
+    title: Componenti GPIO
   - 
     title: Semafori
   - 
-    title: Sequenza del semaforo
+    title: Sequenza dei semafori
