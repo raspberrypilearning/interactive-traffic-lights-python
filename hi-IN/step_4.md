@@ -1,12 +1,13 @@
-## यातायात बत्तिया
+## Traffic lights
 
-आप तीन अलग-अलग एलईडी के बजाय इन-बिल्ड ` ट्रैफिक लाइट </ 0> श्रेणी का उपयोग कर सकते हैं।</p>
+You can use the built-in `TrafficLights` class instead of three individual LEDs.
 
-<p>--- task ---</p>
+\--- task \---
 
-<p>`from gpiozero import...` लाइन मे एलईडी को ट्रैफिक लाइट से बदल दो:</p>
+Amend the `from gpiozero import...` line to replace `LED` with `TrafficLights`:
 
-<pre><code class="python">from gpiozero import TrafficLights, Button
+```python
+from gpiozero import TrafficLights, Button
 from time import sleep
 
 button = Button(21)
@@ -17,19 +18,20 @@ while True:
     lights.on()
     button.wait_for_release()
     lights.off()
-`</pre> 
+```
 
 \--- /task \---
 
 \--- task \---
 
-लाइट को बदलने की कोशिश करें ` blink </ 0> से:</p>
+Try changing the lights to `blink`:
 
-<pre><code class="python">while True:
+```python
+while True:
     lights.blink()
     button.wait_for_press()
     lights.off()
     button.wait_for_release()
-`</pre> 
+```
 
 \--- /task \---
