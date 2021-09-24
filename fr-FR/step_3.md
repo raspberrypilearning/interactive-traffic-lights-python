@@ -1,72 +1,72 @@
-## Contrôler les LED et le bouton
+## Control the LEDs and button
 
 \--- task \---
 
-Ouvre **Mu** depuis le menu principal.
+Open **Mu** from the main menu.
 
 \--- /task \---
 
 \--- task \---
 
-Entre la commande suivante :
+Enter the following code:
 
 ```python
 from gpiozero import LED, Button
 
-rouge = LED(25)
-bouton = Button(21)
+red = LED(25)
+button = Button(21)
 
 while True:
-    if bouton.is_pressed:
-        rouge.on()
+    if button.is_pressed:
+        red.on()
     else:
-        rouge.off()
+        red.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Exécute le code avec `F5`. Maintenant, quand tu appuies sur le bouton, la LED rouge va s'allumer.
+Run your code with `F5`. Now when you press the button, the green LED will come on.
 
 \--- /task \---
 
 \--- task \---
 
-Essaie de créer trois LEDs :
+Try creating three LEDs:
 
 ```python
 from gpiozero import LED, Button
 
-rouge = LED(25)
-orange = LED(28)
-vert = LED(27)
+red = LED(25)
+amber = LED(28)
+green = LED(27)
 
-bouton = Button(21)
+button = Button(21)
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Fais en sorte qu'ils s'allument s'allumer lorsque le bouton est pressé :
+Get them to come on when the button is pressed:
 
 ```python
 while True:
-    if bouton.is_pressed:
-        vert.on()
-        orange.on()
-        rouge.on()
+    if button.is_pressed:
+        green.on()
+        amber.on()
+        red.on()
     else:
-        vert.off()
-        orange.off()
-        rouge.off()
+        green.off()
+        amber.off()
+        red.off()
 ```
 
 \--- /task \---
 
 \--- task \---
 
-Exécute le code et appuie sur le bouton.
+Run the code and press the button.
 
 \--- /task \---
