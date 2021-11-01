@@ -46,10 +46,11 @@ title: Information for Jam organisers
 
 If you need to print this project we have PDF versions for connecting LEDs or a pi-stop: 
 + [LEDs](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Traffic-Lights-Python.pdf). 
-+ [Pi-stop - page 1 only](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf).
++ [Pi-stop - page 1 only](https://github.com/raspberrypilearning/jam-worksheets/raw/master/pdf/Interactive-Traffic-Lights-Python.pdf).*
 
-Please observe any notes on this page before printing and note that page 2 of the pi-stop PDF covers creating a [Traffic lights controller GUI] (https://projects.raspberrypi.org/en/projects/traffic-lights-controller-gui){:target="_blank"}.
+Please observe any notes on this page before printing.
 
+* page 2 of the pi-stop PDF covers creating a [Traffic lights controller GUI](https://projects.raspberrypi.org/en/projects/traffic-lights-controller-gui){:target="_blank"}. 
 
 --- /no-print ---
 
