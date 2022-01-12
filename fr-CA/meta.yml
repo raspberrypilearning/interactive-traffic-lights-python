@@ -1,7 +1,8 @@
 ---
 title: Contrôler une séquence de feux de circulation interactive avec Python
 hero_image: images/banner.png
-description: Utilisez des DELs, un bouton et un avertisseur sonore pour programmer une séquence de feux de circulation complète avec Python
+description: Utilisez des DELs, un bouton et un avertisseur sonore pour programmer
+  une séquence de feux de circulation complète avec Python
 theme: red
 duration: 2
 listed: false
@@ -16,8 +17,10 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Introduction
-  - title: Ce dont vous aurez besoin
-  - title: Composants GPIO
-  - title: Feux de circulation
-  - title: Séquence de feux de circulation
+- title: Introduction
+  completion: engaged
+- title: Ce dont vous aurez besoin
+- title: Composants GPIO
+- title: Feux de circulation
+  completion: internal
+- title: Séquence de feux de circulation

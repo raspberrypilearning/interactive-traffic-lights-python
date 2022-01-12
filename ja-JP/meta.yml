@@ -15,9 +15,11 @@ hardware: electronic-components
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: 前書き
+  completion: engaged
 - title: あなたが必要とするもの
 - title: GPIOコンポーネント
 - title: 交通信号灯
+  completion: internal
 - title: 交通信号のシーケンス
