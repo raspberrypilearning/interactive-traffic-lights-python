@@ -1,6 +1,8 @@
+---
 title: Interactive Traffic Lights with Python
 hero_image: images/banner.png
-description: Use LEDs, a button and a buzzer to program an interactive traffic lights sequence with Python
+description: Use LEDs, a button and a buzzer to program an interactive traffic lights
+  sequence with Python
 listed: false
 copyedit: false
 version: 4.1

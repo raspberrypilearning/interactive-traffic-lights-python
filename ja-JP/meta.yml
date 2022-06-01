@@ -15,7 +15,7 @@ hardware: electronic-components
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
+steps:
 - title: 前書き
 - title: あなたが必要とするもの
 - title: GPIOコンポーネント
