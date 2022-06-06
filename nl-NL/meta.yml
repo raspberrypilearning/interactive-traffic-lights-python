@@ -9,9 +9,7 @@ version: 4.1
 last_tested: 2018-11-21
 steps:
 - title: Inleiding
-  completion: engaged
 - title: Verbind de componenten
 - title: Bedien de LED's en de knop
 - title: Verkeerslichten
-  completion: internal
 - title: Verkeerslicht volgorde

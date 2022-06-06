@@ -18,9 +18,7 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Ce dont vous aurez besoin
 - title: Composants GPIO
 - title: Feux de circulation
-  completion: internal
 - title: Séquence de feux de circulation
